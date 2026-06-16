@@ -1,4 +1,4 @@
-# Personalized Learning Orchestrator Reference
+﻿# Personalized Lifelong Learning Orchestrator Reference
 
 Use this reference when running the full Loop Learning OS workflow.
 
@@ -96,4 +96,5 @@ Review evidence and decide:
 - Upgrade target.
 - Pause.
 - Graduate.
+
 

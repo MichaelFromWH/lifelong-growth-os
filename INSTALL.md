@@ -1,8 +1,8 @@
-# Install Personalized Learning
+﻿# Install Personalized Lifelong Learning
 
-Personalized Learning can be used in two ways:
+Personalized Lifelong Learning can be used in two ways:
 
-- As a Codex Skill via `skills/personalized-learning`.
+- As a Codex Skill via `skills/personalized-lifelong-learning`.
 - As a Generic Agent Pack by loading `AGENT.md` and related references into any agent runtime.
 
 ## Install As A Codex Skill
@@ -10,16 +10,16 @@ Personalized Learning can be used in two ways:
 ### Option 1: Clone Then Install Locally
 
 ```powershell
-git clone https://github.com/MichaelFromWH/personalized-learning.git
-cd personalized-learning
+git clone https://github.com/MichaelFromWH/personalized-lifelong-learning.git
+cd personalized-lifelong-learning
 powershell -ExecutionPolicy Bypass -File .\scripts\install-codex-skill.ps1
 ```
 
 On macOS/Linux:
 
 ```bash
-git clone https://github.com/MichaelFromWH/personalized-learning.git
-cd personalized-learning
+git clone https://github.com/MichaelFromWH/personalized-lifelong-learning.git
+cd personalized-lifelong-learning
 bash ./scripts/install-codex-skill.sh
 ```
 
@@ -30,19 +30,19 @@ Restart Codex after installation.
 Use the skill path:
 
 ```text
-skills/personalized-learning
+skills/personalized-lifelong-learning
 ```
 
 Example:
 
 ```bash
-install-skill-from-github --repo MichaelFromWH/personalized-learning --path skills/personalized-learning
+install-skill-from-github --repo MichaelFromWH/personalized-lifelong-learning --path skills/personalized-lifelong-learning
 ```
 
 If your installer supports URLs:
 
 ```bash
-install-skill-from-github --url https://github.com/MichaelFromWH/personalized-learning/tree/main/skills/personalized-learning
+install-skill-from-github --url https://github.com/MichaelFromWH/personalized-lifelong-learning/tree/main/skills/personalized-lifelong-learning
 ```
 
 ## Install Into A Custom Skill Library
@@ -50,7 +50,7 @@ install-skill-from-github --url https://github.com/MichaelFromWH/personalized-le
 Copy this folder into your agent's skill library:
 
 ```text
-skills/personalized-learning
+skills/personalized-lifelong-learning
 ```
 
 The copied folder must contain:
@@ -77,7 +77,7 @@ From the repository root:
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\tests\validate-pack.ps1
 powershell -ExecutionPolicy Bypass -File .\tests\test-transcript-harness.ps1
-powershell -ExecutionPolicy Bypass -File .\skills\personalized-learning\scripts\validate-skill.ps1
+powershell -ExecutionPolicy Bypass -File .\skills\personalized-lifelong-learning\scripts\validate-skill.ps1
 ```
 
 Expected result:
@@ -87,3 +87,5 @@ VALIDATION PASSED
 TRANSCRIPT HARNESS TEST PASSED
 PERSONALIZED LEARNING SKILL VALIDATION PASSED
 ```
+
+

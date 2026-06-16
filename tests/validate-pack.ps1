@@ -1,4 +1,4 @@
-param(
+﻿param(
   [string]$Root = "."
 )
 
@@ -96,8 +96,8 @@ Assert-Contains "tests/evaluation-rubric.md" @(
 )
 
 Assert-Contains "README.md" @(
-  "Personalized Learning",
-  "personalized-learning",
+  "Personalized Lifelong Learning",
+  "personalized-lifelong-learning",
   "GitHub",
   "Codex",
   "Claude",
@@ -109,27 +109,27 @@ Assert-Contains "INSTALL.md" @(
   "Codex Skill",
   "Generic Agent",
   "GitHub",
-  "skills/personalized-learning"
+  "skills/personalized-lifelong-learning"
 )
 
 Assert-Contains "agent-pack.json" @(
-  '"name": "personalized-learning"',
-  '"displayName": "Personalized Learning"',
+  '"name": "personalized-lifelong-learning"',
+  '"displayName": "Personalized Lifelong Learning"',
   '"codexSkill"',
   '"genericAgent"'
 )
 
 Assert-FileExists "scripts/install-codex-skill.ps1" | Out-Null
 Assert-FileExists "scripts/install-codex-skill.sh" | Out-Null
-Assert-FileExists "skills/personalized-learning/SKILL.md" | Out-Null
-Assert-FileExists "skills/personalized-learning/agents/openai.yaml" | Out-Null
-Assert-FileExists "skills/personalized-learning/references/orchestrator.md" | Out-Null
-Assert-FileExists "skills/personalized-learning/references/state-schemas.md" | Out-Null
-Assert-FileExists "skills/personalized-learning/references/evaluation-rubric.md" | Out-Null
-Assert-FileExists "skills/personalized-learning/scripts/validate-skill.ps1" | Out-Null
+Assert-FileExists "skills/personalized-lifelong-learning/SKILL.md" | Out-Null
+Assert-FileExists "skills/personalized-lifelong-learning/agents/openai.yaml" | Out-Null
+Assert-FileExists "skills/personalized-lifelong-learning/references/orchestrator.md" | Out-Null
+Assert-FileExists "skills/personalized-lifelong-learning/references/state-schemas.md" | Out-Null
+Assert-FileExists "skills/personalized-lifelong-learning/references/evaluation-rubric.md" | Out-Null
+Assert-FileExists "skills/personalized-lifelong-learning/scripts/validate-skill.ps1" | Out-Null
 
-Assert-Contains "skills/personalized-learning/SKILL.md" @(
-  "personalized-learning",
+Assert-Contains "skills/personalized-lifelong-learning/SKILL.md" @(
+  "personalized-lifelong-learning",
   "Loop Learning OS",
   "goal contract",
   "level assessment",
@@ -192,3 +192,5 @@ if ($failures.Count -gt 0) {
 
 Write-Host "VALIDATION PASSED" -ForegroundColor Green
 Write-Host "Required files, skill routing, schemas, visual rules, and scenario coverage are present."
+
+

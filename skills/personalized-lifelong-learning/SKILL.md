@@ -1,9 +1,9 @@
 ---
-name: personalized-learning
-description: Personalized Learning / Loop Learning OS for turning any learning goal into a dynamic learning loop. Use when a user wants to learn, improve, prepare for an exam, build a project, research a topic, develop a career skill, create work, or form a practical life habit through goal clarification, level assessment, learning map, path planning, tutoring, review adjustment, and learner state memory.
+name: personalized-lifelong-learning
+description: Personalized Lifelong Learning / Loop Learning OS for turning any learning goal into a dynamic learning loop. Use when a user wants to learn, improve, prepare for an exam, build a project, research a topic, develop a career skill, create work, or form a practical life habit through goal clarification, level assessment, learning map, path planning, tutoring, review adjustment, and learner state memory.
 ---
 
-# Personalized Learning
+# Personalized Lifelong Learning
 
 Use this skill to run Loop Learning OS: a goal-driven personalized learning workflow for any learning target.
 
@@ -82,4 +82,6 @@ For learning maps, plan cards, or review dashboards:
 ## Safety Boundary
 
 For medical, legal, financial, mental health, physical training, or other high-stakes goals, keep guidance educational and encourage qualified professional advice when needed. Do not overclaim certainty.
+
+
 

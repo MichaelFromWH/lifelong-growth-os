@@ -1,14 +1,14 @@
-{
-  "name": "personalized-learning",
-  "displayName": "Personalized Learning",
+﻿{
+  "name": "personalized-lifelong-learning",
+  "displayName": "Personalized Lifelong Learning",
   "version": "0.1.0",
   "description": "A platform-neutral Agent Pack for running a dynamic personalized learning loop across general-purpose AI agents.",
   "method": "Loop Learning OS",
   "entrypoints": {
     "genericAgent": "AGENT.md",
-    "codexSkill": "skills/personalized-learning/SKILL.md"
+    "codexSkill": "skills/personalized-lifelong-learning/SKILL.md"
   },
-  "skillPath": "skills/personalized-learning",
+  "skillPath": "skills/personalized-lifelong-learning",
   "supports": [
     "Codex",
     "Claude",
@@ -32,8 +32,10 @@
   "tests": {
     "structural": "tests/validate-pack.ps1",
     "transcriptHarness": "tests/test-transcript-harness.ps1",
-    "codexSkill": "skills/personalized-learning/scripts/validate-skill.ps1"
+    "codexSkill": "skills/personalized-lifelong-learning/scripts/validate-skill.ps1"
   },
   "license": "MIT"
 }
+
+
 

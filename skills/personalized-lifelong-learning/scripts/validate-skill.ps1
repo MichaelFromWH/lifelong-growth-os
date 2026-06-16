@@ -1,4 +1,4 @@
-param(
+﻿param(
   [string]$SkillRoot = (Split-Path -Parent $PSScriptRoot)
 )
 
@@ -37,7 +37,7 @@ Require-File "references/state-schemas.md"
 Require-File "references/evaluation-rubric.md"
 
 Require-Text "SKILL.md" @(
-  "name: personalized-learning",
+  "name: personalized-lifelong-learning",
   "Loop Learning OS",
   "goal contract",
   "level assessment",
@@ -71,3 +71,4 @@ if ($failures.Count -gt 0) {
 }
 
 Write-Host "PERSONALIZED LEARNING SKILL VALIDATION PASSED" -ForegroundColor Green
+

@@ -1,4 +1,4 @@
-# Personalized Learning Evaluation Rubric
+﻿# Personalized Lifelong Learning Evaluation Rubric
 
 Score each criterion from 0 to 3:
 
@@ -35,4 +35,5 @@ Common failures:
 - Forgetting review rules.
 - Ignoring guidance style.
 - Overclaiming in high-stakes domains.
+
 

@@ -1,4 +1,4 @@
-# Personalized Learning State Schemas
+﻿# Personalized Lifelong Learning State Schemas
 
 Use these schemas as Markdown/YAML state records. Keep them compact and update them when evidence changes.
 
@@ -106,4 +106,5 @@ learning_plan:
   status: "active"
   updated_at: ""
 ```
+
 

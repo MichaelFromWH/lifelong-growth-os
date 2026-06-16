@@ -1,6 +1,6 @@
-# Personalized Learning
+﻿# Personalized Lifelong Learning
 
-Personalized Learning is a platform-neutral Agent Pack for running a dynamic learning loop inside general-purpose AI agents.
+Personalized Lifelong Learning is a platform-neutral Agent Pack for running a dynamic learning loop inside general-purpose AI agents.
 
 It is built around the Loop Learning OS method:
 
@@ -14,7 +14,7 @@ This project is not limited to Codex. It is designed to work with general Agent 
 
 ## What It Does
 
-Personalized Learning helps an agent guide learners through:
+Personalized Lifelong Learning helps an agent guide learners through:
 
 - clarifying vague learning goals
 - assessing current level with evidence
@@ -33,7 +33,7 @@ Personalized Learning helps an agent guide learners through:
 ├── agent-pack.json                  # Platform-neutral manifest
 ├── INSTALL.md                       # Installation guide
 ├── skills/
-│   ├── personalized-learning/       # Installable Codex Skill package
+│   ├── personalized-lifelong-learning/       # Installable Codex Skill package
 │   ├── goal-clarification.md        # Agent Pack phase docs
 │   ├── level-assessment.md
 │   ├── learning-map.md
@@ -61,18 +61,18 @@ On macOS/Linux:
 bash ./scripts/install-codex-skill.sh
 ```
 
-Then restart Codex so the `personalized-learning` skill is picked up.
+Then restart Codex so the `personalized-lifelong-learning` skill is picked up.
 
 If installing directly from a GitHub repo with a Codex skill installer, use the skill path:
 
 ```text
-skills/personalized-learning
+skills/personalized-lifelong-learning
 ```
 
 Example:
 
 ```bash
-install-skill-from-github --repo MichaelFromWH/personalized-learning --path skills/personalized-learning
+install-skill-from-github --repo MichaelFromWH/personalized-lifelong-learning --path skills/personalized-lifelong-learning
 ```
 
 See [INSTALL.md](INSTALL.md) for more options.
@@ -103,7 +103,7 @@ powershell -ExecutionPolicy Bypass -File .\tests\test-transcript-harness.ps1
 Run standalone Codex Skill validation:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\skills\personalized-learning\scripts\validate-skill.ps1
+powershell -ExecutionPolicy Bypass -File .\skills\personalized-lifelong-learning\scripts\validate-skill.ps1
 ```
 
 The transcript harness generates:
@@ -121,3 +121,5 @@ This is an early Agent Pack. It already includes a complete workflow, schemas, t
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+
