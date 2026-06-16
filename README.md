@@ -72,7 +72,7 @@ skills/personalized-learning
 Example:
 
 ```bash
-install-skill-from-github --repo <owner>/personalized-learning --path skills/personalized-learning
+install-skill-from-github --repo MichaelFromWH/personalized-learning --path skills/personalized-learning
 ```
 
 See [INSTALL.md](INSTALL.md) for more options.
@@ -121,4 +121,3 @@ This is an early Agent Pack. It already includes a complete workflow, schemas, t
 ## License
 
 MIT. See [LICENSE](LICENSE).
-

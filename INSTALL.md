@@ -10,7 +10,7 @@ Personalized Learning can be used in two ways:
 ### Option 1: Clone Then Install Locally
 
 ```powershell
-git clone https://github.com/<owner>/personalized-learning.git
+git clone https://github.com/MichaelFromWH/personalized-learning.git
 cd personalized-learning
 powershell -ExecutionPolicy Bypass -File .\scripts\install-codex-skill.ps1
 ```
@@ -18,7 +18,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\install-codex-skill.ps1
 On macOS/Linux:
 
 ```bash
-git clone https://github.com/<owner>/personalized-learning.git
+git clone https://github.com/MichaelFromWH/personalized-learning.git
 cd personalized-learning
 bash ./scripts/install-codex-skill.sh
 ```
@@ -36,13 +36,13 @@ skills/personalized-learning
 Example:
 
 ```bash
-install-skill-from-github --repo <owner>/personalized-learning --path skills/personalized-learning
+install-skill-from-github --repo MichaelFromWH/personalized-learning --path skills/personalized-learning
 ```
 
 If your installer supports URLs:
 
 ```bash
-install-skill-from-github --url https://github.com/<owner>/personalized-learning/tree/main/skills/personalized-learning
+install-skill-from-github --url https://github.com/MichaelFromWH/personalized-learning/tree/main/skills/personalized-learning
 ```
 
 ## Install Into A Custom Skill Library
@@ -87,4 +87,3 @@ VALIDATION PASSED
 TRANSCRIPT HARNESS TEST PASSED
 PERSONALIZED LEARNING SKILL VALIDATION PASSED
 ```
-
