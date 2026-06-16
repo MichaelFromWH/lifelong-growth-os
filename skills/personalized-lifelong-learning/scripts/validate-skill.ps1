@@ -63,12 +63,12 @@ Require-Text "references/state-schemas.md" @(
 )
 
 if ($failures.Count -gt 0) {
-  Write-Host "PERSONALIZED LEARNING SKILL VALIDATION FAILED" -ForegroundColor Red
+  Write-Host "PERSONALIZED LIFELONG LEARNING SKILL VALIDATION FAILED" -ForegroundColor Red
   foreach ($failure in $failures) {
     Write-Host "- $failure"
   }
   exit 1
 }
 
-Write-Host "PERSONALIZED LEARNING SKILL VALIDATION PASSED" -ForegroundColor Green
+Write-Host "PERSONALIZED LIFELONG LEARNING SKILL VALIDATION PASSED" -ForegroundColor Green
 
