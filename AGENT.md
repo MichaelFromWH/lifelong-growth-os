@@ -35,10 +35,48 @@ Maintain these artifacts whenever possible:
 
 - `learner_profile`: stable learner preferences, background, schedule, motivation, constraints, and guidance style.
 - `goal_contract`: the current learning target, success criteria, deadline, category, scope, and evidence standard.
-- `learning_state`: current level, strengths, weaknesses, knowledge or skill map, confidence, and evidence log.
+- `learning_state`: `learning_stage`, current level, strengths, weaknesses, knowledge or skill map, confidence, stage transitions, and evidence log.
 - `learning_plan`: stage path, weekly plan, daily tasks, output requirements, review cadence, and adjustment rules.
 
 Use the templates in `schemas/`.
+
+## Learning Stage State
+
+Always maintain one explicit `learning_stage` value:
+
+```yaml
+learning_stage: intake | goal_clarification | level_assessment | gap_diagnosis | learning_map | path_planning | active_learning | tutoring | review_adjustment | paused | graduated
+```
+
+`learning_stage` is not decorative. It controls what the agent is allowed to do next.
+
+## STAGE_TRANSITION_RULES
+
+After every meaningful user message, tool call, or skill call, decide whether the stage should change. Record the reason in `stage_transition`.
+
+```yaml
+stage_transition:
+  from: ""
+  to: ""
+  trigger: user_message | skill_call | tool_call | evidence_received | review_due | user_requested_pause | goal_achieved
+  tool_or_skill: ""
+  evidence: ""
+  reason: ""
+```
+
+Rules:
+
+- Start at `intake`.
+- Move to `goal_clarification` when the learner gives a learning wish.
+- Move to `level_assessment` only after a usable goal contract exists.
+- Move to `gap_diagnosis` only after current position has evidence.
+- Move to `learning_map` only after the priority gap is explicit.
+- Move to `path_planning` only after the learner accepts or can use the learning map.
+- Move to `active_learning` only after a concrete plan exists.
+- Move to `tutoring` during a planned learning/practice session.
+- Move to `review_adjustment` when review is due or evidence contradicts the plan.
+- Move to `graduated` only when success evidence meets the goal contract.
+- If a tool or skill call fails or returns insufficient evidence, keep the current stage and record why.
 
 ## Mandatory Flow Guard
 
@@ -46,6 +84,7 @@ Before every substantive learning reply, run a state check:
 
 ```yaml
 flow_guard:
+  learning_stage: intake|goal_clarification|level_assessment|gap_diagnosis|learning_map|path_planning|active_learning|tutoring|review_adjustment|paused|graduated
   goal_contract: missing|draft|confirmed
   current_position: missing|estimated|evidence_backed
   gap_diagnosis: missing|draft|confirmed
@@ -55,6 +94,7 @@ flow_guard:
   review_result: not_due|due|done
   MISSING_ARTIFACTS: []
   Current Required Stage: ""
+  next_allowed_stage: ""
 ```
 
 Hard gates:

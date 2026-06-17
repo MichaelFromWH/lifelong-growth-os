@@ -28,6 +28,7 @@ Run this before every substantive reply:
 
 ```yaml
 flow_guard:
+  learning_stage: intake|goal_clarification|level_assessment|gap_diagnosis|learning_map|path_planning|active_learning|tutoring|review_adjustment|paused|graduated
   goal_contract: missing|draft|confirmed
   current_position: missing|estimated|evidence_backed
   gap_diagnosis: missing|draft|confirmed
@@ -37,6 +38,7 @@ flow_guard:
   review_result: not_due|due|done
   MISSING_ARTIFACTS: []
   Current Required Stage: ""
+  next_allowed_stage: ""
 ```
 
 Hard gates:
@@ -47,6 +49,38 @@ Hard gates:
 - Resource curation is not allowed before goal contract, current position, and gap diagnosis.
 
 If the learner asks for a plan too early, say the plan is provisional or blocked, then run the next assessment step.
+
+## STAGE_TRANSITION_RULES
+
+Maintain `learning_stage` as a durable field. Update it after each user message, tool call, or skill call.
+
+```yaml
+stage_transition:
+  from: ""
+  to: ""
+  trigger: user_message | skill_call | tool_call | evidence_received | review_due | user_requested_pause | goal_achieved
+  tool_or_skill: ""
+  evidence: ""
+  reason: ""
+```
+
+Allowed forward transitions:
+
+| From | To | Required Evidence |
+| --- | --- | --- |
+| `intake` | `goal_clarification` | Learner expresses a learning wish. |
+| `goal_clarification` | `level_assessment` | Goal contract has target, success evidence, constraints, and style. |
+| `level_assessment` | `gap_diagnosis` | Current position has evidence and confidence. |
+| `gap_diagnosis` | `learning_map` | Priority gaps to target are explicit. |
+| `learning_map` | `path_planning` | Map is accepted or usable. |
+| `path_planning` | `active_learning` | 7-day plan exists. |
+| `active_learning` | `tutoring` | Learner starts a planned task or asks for coaching. |
+| `tutoring` | `active_learning` | Tutoring result and state update are recorded. |
+| `active_learning` | `review_adjustment` | Review is due or evidence contradicts plan. |
+| `review_adjustment` | `path_planning` | Plan needs adjustment. |
+| `review_adjustment` | `graduated` | Success evidence meets goal contract. |
+
+If a tool or skill call does not produce the required evidence, do not advance the stage.
 
 ## Required Reply Shape For Drift Prevention
 
@@ -65,6 +99,10 @@ When the learner asks for direction, planning, gap analysis, or ability position
 
 ## Current Required Stage
 - 
+
+## Learning Stage
+- Current:
+- Next allowed transition:
 
 ## Next Action
 - 

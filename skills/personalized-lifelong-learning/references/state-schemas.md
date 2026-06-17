@@ -60,6 +60,14 @@ goal_contract:
 ```yaml
 learning_state:
   goal_id: ""
+  learning_stage: "intake"
+  last_stage_transition:
+    from: ""
+    to: "intake"
+    trigger: ""
+    tool_or_skill: ""
+    evidence: ""
+    reason: ""
   current_level:
     label: ""
     confidence: "low"
@@ -78,6 +86,14 @@ learning_state:
     risks: []
     checkpoints: []
   evidence_log: []
+  stage_transition_log:
+    - date: ""
+      from: ""
+      to: ""
+      trigger: ""
+      tool_or_skill: ""
+      evidence: ""
+      reason: ""
   updated_at: ""
 ```
 

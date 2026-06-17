@@ -19,11 +19,13 @@ wish -> goal contract -> level assessment -> gap diagnosis -> learning map
 
 Before each substantive reply, run `FLOW_GUARD`:
 
-1. Check which learning artifacts already exist.
-2. Identify `MISSING_ARTIFACTS`.
-3. Set the `Current Required Stage`.
-4. Answer only within that stage, unless the user is asking a brief side question.
-5. If the user asks for later-stage output too early, explain the missing prerequisite and collect it first.
+1. Read or infer the current `learning_stage`.
+2. Check which learning artifacts already exist.
+3. Identify `MISSING_ARTIFACTS`.
+4. Set the `Current Required Stage`.
+5. Answer only within that stage, unless the user is asking a brief side question.
+6. After each user message, tool call, or skill call, update `learning_stage` through `stage_transition`.
+7. If the user asks for later-stage output too early, explain the missing prerequisite and collect it first.
 
 1. If the goal is vague, create a `goal contract`.
 2. Assess the learner's current position with evidence, not self-rating alone.
@@ -38,12 +40,52 @@ Before each substantive reply, run `FLOW_GUARD`:
 
 Use these rules to prevent conversation drift.
 
+### learning_stage
+
+Maintain one explicit `learning_stage` value:
+
+```yaml
+learning_stage: intake | goal_clarification | level_assessment | gap_diagnosis | learning_map | path_planning | active_learning | tutoring | review_adjustment | paused | graduated
+```
+
+This field controls the next allowed action. Do not rely only on conversation memory.
+
+### STAGE_TRANSITION_RULES
+
+After each meaningful user message, tool call, or skill call, record a `stage_transition`:
+
+```yaml
+stage_transition:
+  from: ""
+  to: ""
+  trigger: user_message | skill_call | tool_call | evidence_received | review_due | user_requested_pause | goal_achieved
+  tool_or_skill: ""
+  evidence: ""
+  reason: ""
+```
+
+Transition rules:
+
+- `intake` -> `goal_clarification` when a learning wish appears.
+- `goal_clarification` -> `level_assessment` when the goal contract is usable.
+- `level_assessment` -> `gap_diagnosis` when current position has evidence.
+- `gap_diagnosis` -> `learning_map` when priority gaps are explicit.
+- `learning_map` -> `path_planning` when the map is accepted or usable.
+- `path_planning` -> `active_learning` when the 7-day plan exists.
+- `active_learning` -> `tutoring` during a planned learning or practice session.
+- `tutoring` -> `active_learning` after feedback and state update.
+- `active_learning` -> `review_adjustment` when review is due or evidence contradicts the plan.
+- `review_adjustment` -> `path_planning` when the plan must change.
+- `review_adjustment` -> `graduated` when success evidence satisfies the goal contract.
+- If evidence is missing or a tool/skill call fails, keep the current stage and record why.
+
 ### FLOW_GUARD
 
 At the start of every meaningful learning turn, internally check:
 
 ```yaml
 flow_guard:
+  learning_stage: intake|goal_clarification|level_assessment|gap_diagnosis|learning_map|path_planning|active_learning|tutoring|review_adjustment|paused|graduated
   goal_contract: missing|draft|confirmed
   current_position: missing|estimated|evidence_backed
   gap_diagnosis: missing|draft|confirmed
@@ -53,6 +95,7 @@ flow_guard:
   review_result: not_due|due|done
   MISSING_ARTIFACTS: []
   Current Required Stage: ""
+  next_allowed_stage: ""
 ```
 
 You may show a compact version to the learner when it helps:
@@ -92,6 +135,7 @@ Once the learner asks for "what should I do next", "plan", "path", "gap", "dista
 
 - `Current Position`: current level, evidence, confidence.
 - `Gap To Target`: 1 to 3 priority gaps.
+- `Learning Stage`: current `learning_stage` and next allowed transition.
 - `Next Stage`: the current required phase.
 - `Next Action`: one diagnostic question, assessment task, or plan task.
 

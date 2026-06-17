@@ -64,6 +64,9 @@ foreach ($file in $requiredFiles) {
 
 Assert-Contains "AGENT.md" @(
   "Learning OS Orchestrator",
+  "learning_stage",
+  "stage_transition",
+  "STAGE_TRANSITION_RULES",
   "LL_OS_STEP_GOAL_CLARIFICATION",
   "LL_OS_STEP_LEVEL_ASSESSMENT",
   "LL_OS_STEP_LEARNING_MAP",
@@ -131,6 +134,9 @@ Assert-FileExists "skills/personalized-lifelong-learning/scripts/validate-skill.
 Assert-Contains "skills/personalized-lifelong-learning/SKILL.md" @(
   "personalized-lifelong-learning",
   "Loop Learning OS",
+  "learning_stage",
+  "stage_transition",
+  "STAGE_TRANSITION_RULES",
   "FLOW_GUARD",
   "MISSING_ARTIFACTS",
   "NO_PATH_WITHOUT_ASSESSMENT",
@@ -143,6 +149,18 @@ Assert-Contains "skills/personalized-lifelong-learning/SKILL.md" @(
   "tutoring",
   "review adjustment",
   "references/orchestrator.md"
+)
+
+Assert-Contains "schemas/learning-state.schema.md" @(
+  "learning_stage",
+  "stage_transition_log",
+  "last_stage_transition"
+)
+
+Assert-Contains "skills/personalized-lifelong-learning/references/state-schemas.md" @(
+  "learning_stage",
+  "stage_transition_log",
+  "last_stage_transition"
 )
 
 $scenarioDir = Join-Path $Root "tests/scenarios"

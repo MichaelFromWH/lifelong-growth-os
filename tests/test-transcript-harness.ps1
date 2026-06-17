@@ -58,6 +58,8 @@ if (Test-Path -LiteralPath $transcriptDir -PathType Container) {
     Assert-FileContains $relativePath @(
       "## Simulated Dialogue",
       "Flow Guard",
+      "Learning Stage",
+      "Stage Transition",
       "Missing Artifacts",
       "Current Required Stage",
       "Goal Contract",

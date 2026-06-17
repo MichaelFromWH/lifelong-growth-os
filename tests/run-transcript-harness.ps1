@@ -84,6 +84,7 @@ $safeInitialInput
 ### Turn 2 - Learning OS Orchestrator: Flow Guard
 
 Flow Guard:
+- Learning Stage: intake
 - Goal Contract: missing
 - Current Position: missing
 - Gap Diagnosis: missing
@@ -91,6 +92,15 @@ Flow Guard:
 - Learning Plan: missing
 - Missing Artifacts: goal_contract, current_position, gap_diagnosis, learning_map, learning_plan
 - Current Required Stage: goal clarification
+- Next Allowed Stage: goal_clarification
+
+Stage Transition:
+- from: intake
+- to: goal_clarification
+- trigger: user_message
+- tool_or_skill: none
+- evidence: learner expressed a learning wish
+- reason: a learning wish starts the goal clarification phase
 
 I will not jump into resources or a full path yet. First I need to lock the learning destination, then locate the learner and diagnose the gap.
 
@@ -105,12 +115,28 @@ Goal Contract:
 - Time horizon: first review after 7 days unless the scenario states a stricter deadline.
 - Guidance style: ask the learner to choose one, default to action_coach if they do not choose.
 
+Stage Transition:
+- from: goal_clarification
+- to: level_assessment
+- trigger: skill_call
+- tool_or_skill: goal-clarification
+- evidence: usable goal contract draft exists
+- reason: current position is now the next missing artifact
+
 ### Turn 4 - Learning OS Orchestrator: Current Position
 
 Current Position:
 - Assessment mode is selected from the goal category.
 - Evidence requested: prior experience, one recent attempt, or a small diagnostic task.
 - Confidence starts as medium only after evidence is provided.
+
+Stage Transition:
+- from: level_assessment
+- to: gap_diagnosis
+- trigger: skill_call
+- tool_or_skill: level-assessment
+- evidence: current position has assessment evidence
+- reason: the gap to target can now be diagnosed
 
 ### Turn 5 - Learning OS Orchestrator: Gap Diagnosis
 

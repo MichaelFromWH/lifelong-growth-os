@@ -40,6 +40,9 @@ Require-Text "SKILL.md" @(
   "name: personalized-lifelong-learning",
   "Loop Learning OS",
   "FLOW_GUARD",
+  "learning_stage",
+  "stage_transition",
+  "STAGE_TRANSITION_RULES",
   "MISSING_ARTIFACTS",
   "NO_PATH_WITHOUT_ASSESSMENT",
   "CURRENT_POSITION_REQUIRED",
@@ -63,6 +66,8 @@ Require-Text "references/orchestrator.md" @(
 Require-Text "references/state-schemas.md" @(
   "learner_profile",
   "goal_contract",
+  "learning_stage",
+  "stage_transition_log",
   "learning_state",
   "learning_plan"
 )
