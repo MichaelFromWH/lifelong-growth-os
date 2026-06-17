@@ -1,8 +1,8 @@
-# Loop Learning OS Agent Pack Design
+﻿# Life Vision Board OS Agent Pack Design
 
 ## Background
 
-The product direction is a general-purpose personalized learning OS that can run inside existing agent environments before becoming a standalone Web/App product. The first artifact should be a platform-neutral Markdown Agent Pack rather than a full application.
+The product direction is a general-purpose Life Vision Board OS that can run inside existing agent environments before becoming a standalone Web/App product. The first artifact should be a platform-neutral Markdown Agent Pack rather than a full application.
 
 ## Target User
 
@@ -13,7 +13,7 @@ The pack serves learners with varied goals: conceptual learning, skill improveme
 This version includes:
 
 - A main orchestrator prompt.
-- Eight reusable skills for the learning loop.
+- Eight reusable skills for the goal-support loop.
 - Four state schemas.
 - Eight scenario-based dialogue tests, one per goal category.
 - A scoring rubric for dialogue quality.
@@ -35,7 +35,7 @@ This version does not include:
 The canonical loop is:
 
 ```text
-wish -> goal contract -> current position -> gap diagnosis -> learning map
+wish -> goal contract -> current position -> gap diagnosis -> milestone route
 -> stage path -> plan -> learning / practice / output -> feedback
 -> review -> adjust or graduate
 ```
@@ -47,14 +47,14 @@ The pack uses a main `AGENT.md` as an orchestrator and separate Markdown skills 
 The testing approach combines structural validation and scenario review:
 
 - Structural validation proves required files, routing markers, category coverage, and visual rules exist.
-- Scenario review proves the design can cover representative learning goals and expected dialogue behavior.
-- Transcript harness testing generates deterministic simulated dialogues for each learning category so the full learning loop can be inspected.
+- Scenario review proves the design can cover representative goals and expected dialogue behavior.
+- Transcript harness testing generates deterministic simulated dialogues for each learning category so the full goal-support loop can be inspected.
 - The self-test report records failures and fixes so the pack can improve over time.
 
 ## Acceptance Criteria
 
 - The main agent clearly routes to all required skills.
-- The pack covers at least eight learning goal categories.
+- The pack covers at least eight goal categories.
 - Each scenario defines user profile, initial input, expected skill chain, acceptance focus, and failure signals.
 - Visual rendering requires text-first confirmation and includes GPT-image-2 output guidance.
 - The validation script exits successfully after implementation.
@@ -71,3 +71,4 @@ powershell -ExecutionPolicy Bypass -File .\tests\test-transcript-harness.ps1
 ```
 
 Then inspect `tests/self-test-report.md` against `tests/evaluation-rubric.md`.
+

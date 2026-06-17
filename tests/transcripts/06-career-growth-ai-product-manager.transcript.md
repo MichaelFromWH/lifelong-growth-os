@@ -6,119 +6,120 @@
 
 ## Simulated Dialogue
 
-### Turn 1 - Learner
+### Turn 1 - User
 
 "我想转 AI 产品经理，但我不知道自己到底缺什么，也不知道该怎么证明自己有这个能力。"
 
-### Turn 2 - Learning OS Orchestrator: Process Preview
+### Turn 2 - Life Vision Board Orchestrator: Process Preview
 
 Process Preview:
-- First we will clarify the target.
-- Then we will locate the learner's current level.
-- After that we will identify the biggest gap, draw a route, turn it into actions, learn with feedback, and review whether the plan should change.
+- First we will clarify what the user really wants.
+- Then we will locate the user's current stage with a lens suited to the goal.
+- After that we will draw the milestone route, turn the current milestone into actions, work through execution, and review whether the route should change.
 
 Stage Purpose:
-- This first step is to turn the wish into a learning destination that can be judged with evidence.
+- This first step is to turn the vision into a destination that can be judged with observable signals.
 
 I will not jump into resources or a full path yet. First I need to make the destination clear enough that the plan can be personal instead of generic.
 
-### Turn 3 - Learning OS Orchestrator: Learning Goal
+### Turn 3 - Life Vision Board Orchestrator: Goal Contract
 
 Stage Purpose:
-- Now we are making the goal concrete, so the learner knows what "done" will look like.
+- Now we are making the goal concrete, so the user knows what "done" will look like.
 
-Learning Goal:
+Goal Contract:
 - Category: career_growth
-- Clarified goal: convert the learner's wish into a concrete target with success evidence.
-- Success evidence: the learner produces a real output that proves progress.
+- Clarified goal: convert the user's vision into a concrete target with observable success signals.
+- Success signals: the user produces or records real output that proves progress.
 - Time horizon: first review after 7 days unless the scenario states a stricter deadline.
-- Guidance preference: ask the learner to choose relaxed companion, direct mentor, question-led coach, action coach, or challenge mode.
+- Guidance preference: ask the user to choose relaxed companion, direct mentor, question-led coach, action coach, or challenge mode.
 
-OKR Breakdown:
-- Objective: reach the clarified learning target in a way the learner can prove.
-- Key Results:
-  - KR1: produce a baseline output or score that shows the current starting point.
-  - KR2: complete the first improvement cycle and submit evidence.
-  - KR3: review progress and decide whether to continue, adjust, or raise the target.
+Goal Decomposition:
+- Objective: reach the clarified target in a way the user can prove.
+- Success Signals:
+  - SS1: produce a baseline output, artifact, decision note, score, or behavior record that shows the current starting point.
+  - SS2: complete the first improvement or validation cycle and submit evidence.
+  - SS3: review progress and decide whether to continue, adjust, complete, or define the next version.
 - Executable Actions:
-  - Share prior experience or one recent attempt.
+  - Share prior context or one recent attempt.
   - Complete a small diagnostic task.
-  - Submit the first practice output for feedback.
+  - Submit the first output for feedback.
 
-### Turn 4 - Learning OS Orchestrator: Current Position
+### Turn 4 - Life Vision Board Orchestrator: Current Stage
 
 Stage Purpose:
 - This step is not a test; it tells us where the route should start.
 
-Current Position:
+Current Stage:
 - Assessment mode is selected from the goal category.
-- Evidence requested: prior experience, one recent attempt, or a small diagnostic task.
-- Confidence starts as medium only after evidence is provided.
+- Current position is not automatically treated as current level.
+- Basis requested: prior context, one recent attempt, artifact, score, routine record, decision context, or a small diagnostic task.
+- Confidence starts as medium only after basis is provided.
 
-### Turn 5 - Learning OS Orchestrator: Gap To Target
+### Turn 5 - Life Vision Board Orchestrator: Distance To Target
 
 Stage Purpose:
-- Now we compare the target with the baseline, so the first week focuses on the gap that matters most.
+- Now we compare the target with the current stage, so the first week focuses on the gap that matters most.
 
-Gap To Target:
-- Compare the target evidence with current performance.
-- Separate knowledge gaps, skill gaps, motivation constraints, and environment constraints.
+Distance To Target:
+- Compare the target signals with the current-position basis.
+- Separate knowledge gaps, skill gaps, validation gaps, motivation constraints, environment constraints, and decision uncertainty.
 - Keep the highest-impact gap visible for the first 7 days.
 
-### Turn 6 - Learning OS Orchestrator: Learning Map
+### Turn 6 - Life Vision Board Orchestrator: Milestone Route
 
 Stage Purpose:
-- This step turns the gap into a route, so the learner can see the journey instead of a pile of tasks.
+- This step turns the distance into a route, so the user can see the journey instead of a pile of tasks.
 
-Learning Map:
-- Start: current position from the assessment.
-- Destination: success evidence from the goal contract.
+Milestone Route:
+- Start: current stage from the assessment.
+- Destination: success signals from the goal contract.
 - Route: 3 to 6 milestones.
 - Risks: likely blockers from the scenario.
-- Checkpoints: evidence-producing review moments.
+- Checkpoints: observable review moments.
 
 Category-specific route hint: Use competency map, proof-of-work artifacts, and role-specific cases.
 
-### Turn 7 - Learning OS Orchestrator: 7-Day Plan
+### Turn 7 - Life Vision Board Orchestrator: 7-Day Stage Plan
 
 Stage Purpose:
-- Now we convert the route and Key Results into actions the learner can actually do this week.
+- Now we convert the route and Success Signals into actions the user can actually do this week.
 
-7-Day Plan:
-- Day 1: KR1 baseline task and first small output.
-- Day 2: KR1 learn the smallest useful concept or technique.
-- Day 3: KR2 practice with feedback.
-- Day 4: KR2 produce a rough artifact or performance sample.
-- Day 5: KR2 correct the main weakness.
-- Day 6: KR3 complete a realistic mini-task.
-- Day 7: KR3 review evidence and adjust the route.
+7-Day Stage Plan:
+- Day 1: SS1 baseline task and first small output.
+- Day 2: SS1 inspect or learn the smallest useful concept, constraint, or technique.
+- Day 3: SS2 practice, decide, validate, or produce with feedback.
+- Day 4: SS2 produce a rough artifact, behavior record, or decision memo.
+- Day 5: SS2 correct the main weakness or uncertainty.
+- Day 6: SS3 complete a realistic mini-task.
+- Day 7: SS3 review evidence and adjust the route.
 
-### Turn 8 - Learning OS Orchestrator: Tutoring Session
+### Turn 8 - Life Vision Board Orchestrator: Coaching Session
 
 Stage Purpose:
 - This step is for doing the work together, collecting evidence, and correcting one concrete weakness.
 
-Tutoring Session:
+Coaching Session:
 - Confirm today's task.
-- Ask the learner to produce something.
+- Ask the user to produce, decide, ship, or record something.
 - Give one strength, one fix, and one next action.
 - Update evidence instead of only giving encouragement.
 
-### Turn 9 - Learning OS Orchestrator: Review Adjustment
+### Turn 9 - Life Vision Board Orchestrator: Review Adjustment
 
 Stage Purpose:
-- This step checks whether the evidence says to continue, lighten, intensify, or change the route.
+- This step checks whether the evidence says to continue, lighten, intensify, complete, or change the route.
 
 Review Adjustment:
-- Review the week's evidence against the learning goal and Key Results.
-- Decide whether to continue, reduce load, raise difficulty, change guidance preference, or graduate.
+- Review the week's evidence against the goal and Success Signals.
+- Decide whether to continue, reduce load, raise difficulty, change guidance preference, complete, or define the next version.
 - Create the next 7-day plan only after the review.
 
-### Turn 10 - Learning OS Orchestrator: Learner State Update
+### Turn 10 - Life Vision Board Orchestrator: User State Update
 
-Learner State Update:
+User State Update:
 - Store the chosen guidance preference.
-- Store current level, confidence, evidence, strengths, weaknesses, and recurring friction.
+- Store current stage, confidence, basis, strengths, weaknesses, and recurring friction.
 - Store plan status and next review date.
 
 ## Scenario Acceptance Focus

@@ -1,8 +1,8 @@
 ﻿{
-    "generated_at":  "2026-06-17T18:16:18",
-    "scenario_count":  8,
-    "passed_count":  8,
-    "average_score":  25.2,
+    "generated_at":  "2026-06-17T22:01:58",
+    "scenario_count":  10,
+    "passed_count":  10,
+    "average_score":  25.1,
     "overall_result":  "pass",
     "results":  [
                     {
@@ -60,6 +60,20 @@
                         "score":  25,
                         "passed":  true,
                         "transcript":  "tests/transcripts/08-research-exploration-industry.transcript.md"
+                    },
+                    {
+                        "scenario":  "09-strategy-decision-opc.md",
+                        "category":  "strategy_decision",
+                        "score":  25,
+                        "passed":  true,
+                        "transcript":  "tests/transcripts/09-strategy-decision-opc.transcript.md"
+                    },
+                    {
+                        "scenario":  "10-identity-growth-creator.md",
+                        "category":  "identity_growth",
+                        "score":  24,
+                        "passed":  true,
+                        "transcript":  "tests/transcripts/10-identity-growth-creator.transcript.md"
                     }
                 ]
 }

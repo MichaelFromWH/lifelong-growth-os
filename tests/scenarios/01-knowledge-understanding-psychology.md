@@ -1,4 +1,4 @@
-# Scenario 01: Knowledge Understanding
+﻿# Scenario 01: Knowledge Understanding
 
 category: knowledge_understanding
 
@@ -13,11 +13,11 @@ A 29-year-old product manager wants to understand cognitive psychology to make b
 ## Expected Skill Chain
 
 1. `goal-clarification`
-2. `level-assessment`
-3. `learning-map`
-4. `path-planning`
+2. `current-stage-assessment`
+3. `target-milestones`
+4. `stage-goal-decomposition`
 5. `resource-curation`
-6. `tutoring-coach`
+6. `personalized-coaching`
 7. `review-adjustment`
 
 ## Acceptance Focus
@@ -32,4 +32,5 @@ A 29-year-old product manager wants to understand cognitive psychology to make b
 - Recommends a long book list before goal clarification.
 - Uses academic jargon without application.
 - No evidence task connecting psychology to product work.
+
 

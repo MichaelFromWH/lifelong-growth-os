@@ -1,8 +1,8 @@
-# Model Strategy For Personalized Lifelong Learning
+# Model Strategy For Life Vision Board
 
 Date: 2026-06-16
 
-This note summarizes open-weight / open-source model candidates for the Personalized Lifelong Learning product. It focuses on a future independent Web/App version, not only the current Codex Skill package.
+This note summarizes open-weight / open-source model candidates for the Life Vision Board product. It focuses on a future independent Web/App version, not only the current Codex Skill package.
 
 ## First Correction: "GLM M3" Is Probably Not The Right Name
 
@@ -18,26 +18,26 @@ The likely matches are:
 
 The model stack needs to support:
 
-- Chinese-first learning conversations.
+- Chinese-first goal-support conversations.
 - Goal clarification and coaching style adaptation.
-- Long-term learner memory and RAG over learning history.
+- Long-term user memory and RAG over goal history.
 - Plan generation and review adjustment.
-- Multimodal input for screenshots, notes, whiteboards, books, and future homework/photos.
-- Low-cost repeated tutoring sessions.
+- Multimodal input for screenshots, notes, whiteboards, books, and user artifacts.
+- Low-cost repeated coaching sessions.
 - Optional local/private deployment.
 
 ## Recommended Stack
 
 ### 1. Main Cloud / Server LLM
 
-Use a strong Chinese-capable, agentic model as the main planner and tutor.
+Use a strong Chinese-capable, agentic model as the main planner and coach.
 
 Recommended candidates:
 
 - `Qwen3 / Qwen3.5 / Qwen3.6 family`: strong Chinese, multilingual, tool-use ecosystem, and broad deployment support.
 - `GLM-4.7-Flash` or `GLM-5`: strong Chinese agent model candidates from Z.ai. GLM-5 is positioned for complex systems engineering and long-horizon agentic tasks, but is large.
-- `MiniMax-M3`: attractive if the product needs native multimodal learning sessions and long context. Very new, so validate deployment maturity before betting the product on it.
-- `Kimi K2.6 / Kimi K2.7 Code`: strong for long-horizon agentic workflows and coding-heavy learning paths; less obviously the default for broad everyday learning.
+- `MiniMax-M3`: attractive if the product needs native multimodal goal-support sessions and long context. Very new, so validate deployment maturity before betting the product on it.
+- `Kimi K2.6 / Kimi K2.7 Code`: strong for long-horizon agentic workflows and coding-heavy goal paths; less obviously the default for broad everyday goals.
 - `DeepSeek-V3.2`: strong reasoning and agent performance, but large deployment footprint.
 
 Practical recommendation:
@@ -51,7 +51,7 @@ Practical recommendation:
 Use multimodal models for:
 
 - notes and screenshots
-- learning map images
+- milestone route images
 - whiteboard photos
 - book pages
 - future assignment/homework screenshots
@@ -70,7 +70,7 @@ Practical recommendation:
 
 ### 3. Retrieval / Memory
 
-Learning OS needs durable memory. Do not rely only on the chat model context.
+Life Vision Board needs durable memory. Do not rely only on the chat model context.
 
 Recommended components:
 
@@ -80,8 +80,8 @@ Recommended components:
 
 Practical recommendation:
 
-- Use structured memory tables for goal contracts, learner profile, learning state, and plans.
-- Use `BGE-M3` or Qwen embeddings for unstructured notes, transcripts, resources, and learner artifacts.
+- Use structured memory tables for goal contracts, user profile, goal state, and stage plans.
+- Use `BGE-M3` or Qwen embeddings for unstructured notes, transcripts, resources, and user artifacts.
 - Add reranking once retrieval starts returning noisy context.
 
 ### 4. Edge / Mobile Model
@@ -111,7 +111,7 @@ Practical recommendation:
 Client Web/App
   -> Learning Orchestrator API
     -> Main LLM Router
-       -> Qwen default planner/tutor
+       -> Qwen default planner/coach
        -> GLM / MiniMax / Kimi / DeepSeek evaluation routes
     -> Vision Router
        -> Qwen3-VL or MiniMax-M3
@@ -144,4 +144,3 @@ Client Web/App
 - FlagEmbedding GitHub: https://github.com/FlagOpen/FlagEmbedding
 - MiniCPM-V GitHub: https://github.com/OpenBMB/MiniCPM-V
 - MiniCPM-V 4.6 Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4.6
-

@@ -1,8 +1,8 @@
-﻿# Install Personalized Lifelong Learning
+# Install Life Vision Board
 
-Personalized Lifelong Learning can be used in two ways:
+Life Vision Board can be used in two ways:
 
-- As a Codex Skill via `skills/personalized-lifelong-learning`.
+- As a Codex Skill via `skills/life-vision-board`.
 - As a Generic Agent Pack by loading `AGENT.md` and related references into any agent runtime.
 
 ## Install As A Codex Skill
@@ -30,19 +30,19 @@ Restart Codex after installation.
 Use the skill path:
 
 ```text
-skills/personalized-lifelong-learning
+skills/life-vision-board
 ```
 
 Example:
 
 ```bash
-install-skill-from-github --repo MichaelFromWH/personalized-lifelong-learning --path skills/personalized-lifelong-learning
+install-skill-from-github --repo MichaelFromWH/personalized-lifelong-learning --path skills/life-vision-board
 ```
 
 If your installer supports URLs:
 
 ```bash
-install-skill-from-github --url https://github.com/MichaelFromWH/personalized-lifelong-learning/tree/main/skills/personalized-lifelong-learning
+install-skill-from-github --url https://github.com/MichaelFromWH/personalized-lifelong-learning/tree/main/skills/life-vision-board
 ```
 
 ## Install Into A Custom Skill Library
@@ -50,7 +50,7 @@ install-skill-from-github --url https://github.com/MichaelFromWH/personalized-li
 Copy this folder into your agent's skill library:
 
 ```text
-skills/personalized-lifelong-learning
+skills/life-vision-board
 ```
 
 The copied folder must contain:
@@ -66,7 +66,7 @@ For Claude, ChatGPT, Coze, Dify-style workflows, custom agents, or open-source m
 
 1. Use `AGENT.md` as the main system/developer instruction.
 2. Treat files in `skills/*.md` as workflow modules.
-3. Use `schemas/*.schema.md` for persistent learner state.
+3. Use `schemas/*.schema.md` for persistent user and goal state.
 4. Use `tests/evaluation-rubric.md` as the review rubric.
 5. Optionally run `tests/run-transcript-harness.ps1` to generate sample transcripts.
 
@@ -77,7 +77,7 @@ From the repository root:
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\tests\validate-pack.ps1
 powershell -ExecutionPolicy Bypass -File .\tests\test-transcript-harness.ps1
-powershell -ExecutionPolicy Bypass -File .\skills\personalized-lifelong-learning\scripts\validate-skill.ps1
+powershell -ExecutionPolicy Bypass -File .\skills\life-vision-board\scripts\validate-skill.ps1
 ```
 
 Expected result:
@@ -85,7 +85,5 @@ Expected result:
 ```text
 VALIDATION PASSED
 TRANSCRIPT HARNESS TEST PASSED
-PERSONALIZED LIFELONG LEARNING SKILL VALIDATION PASSED
+LIFE VISION BOARD SKILL VALIDATION PASSED
 ```
-
-

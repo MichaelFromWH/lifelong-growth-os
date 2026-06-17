@@ -1,12 +1,12 @@
-﻿# Personalized Lifelong Learning State Schemas
+# Life Vision Board State Schemas
 
 Use these schemas as Markdown/YAML state records. Keep them compact and update them when evidence changes.
 
-## Learner Profile
+## User Profile
 
 ```yaml
-learner_profile:
-  learner_id: ""
+user_profile:
+  user_id: ""
   name_or_alias: ""
   background:
     education_or_work: ""
@@ -15,8 +15,8 @@ learner_profile:
   preferences:
     guidance_style: "action_coach"
     preferred_session_length_minutes: 30
-    preferred_learning_modes: []
-    disliked_learning_modes: []
+    preferred_work_modes: []
+    disliked_work_modes: []
     motivation_triggers: []
     friction_triggers: []
   constraints:
@@ -38,18 +38,14 @@ goal_contract:
   goal_id: ""
   category_primary: ""
   category_secondary: ""
-  original_wish: ""
+  original_vision: ""
   clarified_goal: ""
-  okr:
-    objective: ""
-    key_results:
-      - kr_id: "KR1"
-        description: ""
-        target_cycle: "7 days"
-        success_signal: ""
-        evidence: []
-  target_level: ""
-  success_evidence: []
+  objective: ""
+  success_signals:
+    - signal_id: "SS1"
+      description: ""
+      target_cycle: "7 days"
+      observable_output: []
   time_horizon:
     start_date: ""
     target_date: ""
@@ -63,31 +59,31 @@ goal_contract:
   status: "draft"
 ```
 
-## Learning State
+## Goal State
 
 ```yaml
-learning_state:
+goal_state:
   goal_id: ""
-  learning_stage: "intake"
+  goal_stage: "intake"
   last_stage_transition:
     from: ""
     to: "intake"
     trigger: ""
     tool_or_skill: ""
-    evidence: ""
+    assessment_basis: ""
     reason: ""
-  current_level:
+  current_stage:
     label: ""
     confidence: "low"
-    evidence: []
+    assessment_basis: []
   strengths: []
   weaknesses: []
-  gap_diagnosis:
+  distance_to_target:
     - gap: ""
       impact: ""
-      evidence: ""
+      basis: ""
       priority: ""
-  learning_map:
+  target_milestones:
     current_node: ""
     target_node: ""
     milestones: []
@@ -100,15 +96,15 @@ learning_state:
       to: ""
       trigger: ""
       tool_or_skill: ""
-      evidence: ""
+      assessment_basis: ""
       reason: ""
   updated_at: ""
 ```
 
-## Learning Plan
+## Stage Plan
 
 ```yaml
-learning_plan:
+stage_plan:
   goal_id: ""
   current_stage: ""
   stage_path:
@@ -117,10 +113,10 @@ learning_plan:
       graduation_condition: ""
   seven_day_plan:
     - day: 1
-      key_result: "KR1"
+      success_signal: "SS1"
       focus: ""
       task: ""
-      expected_evidence: ""
+      observable_output: ""
       coach_check: ""
   resources: []
   review:
@@ -131,5 +127,3 @@ learning_plan:
   status: "active"
   updated_at: ""
 ```
-
-

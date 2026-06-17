@@ -1,9 +1,0 @@
-﻿interface:
-  display_name: "Personalized Lifelong Learning"
-  short_description: "Dynamic learning loop for any goal"
-  default_prompt: "Use $personalized-lifelong-learning to turn my learning goal into a personalized loop with assessment, map, plan, coaching, and review."
-policy:
-  allow_implicit_invocation: true
-
-
-

@@ -1,4 +1,4 @@
-# Scenario 06: Career Growth
+﻿# Scenario 06: Career Growth
 
 category: career_growth
 
@@ -13,11 +13,11 @@ A traditional product manager wants to transition into AI product management wit
 ## Expected Skill Chain
 
 1. `goal-clarification`
-2. `level-assessment`
-3. `learning-map`
-4. `path-planning`
+2. `current-stage-assessment`
+3. `target-milestones`
+4. `stage-goal-decomposition`
 5. `resource-curation`
-6. `tutoring-coach`
+6. `personalized-coaching`
 7. `review-adjustment`
 
 ## Acceptance Focus
@@ -32,4 +32,5 @@ A traditional product manager wants to transition into AI product management wit
 - Recommends only AI news and courses.
 - No portfolio artifact.
 - Ignores the user's existing product experience.
+
 

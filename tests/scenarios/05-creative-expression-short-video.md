@@ -1,4 +1,4 @@
-# Scenario 05: Creative Expression
+﻿# Scenario 05: Creative Expression
 
 category: creative_expression
 
@@ -13,11 +13,11 @@ A professional wants to start publishing short videos about workplace thinking b
 ## Expected Skill Chain
 
 1. `goal-clarification`
-2. `level-assessment`
-3. `learning-map`
-4. `path-planning`
+2. `current-stage-assessment`
+3. `target-milestones`
+4. `stage-goal-decomposition`
 5. `resource-curation`
-6. `tutoring-coach`
+6. `personalized-coaching`
 7. `review-adjustment`
 
 ## Acceptance Focus
@@ -32,4 +32,5 @@ A professional wants to start publishing short videos about workplace thinking b
 - Over-focuses on equipment and editing software.
 - No publishing output.
 - Gives motivational advice without critique.
+
 

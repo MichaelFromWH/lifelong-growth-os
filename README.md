@@ -1,29 +1,29 @@
-﻿# Personalized Lifelong Learning
+# Life Vision Board
 
-Personalized Lifelong Learning is a platform-neutral Agent Pack for running a dynamic learning loop inside general-purpose AI agents.
+Life Vision Board is a platform-neutral Agent Pack for turning vague goals, ambitions, learning targets, projects, habits, career moves, creative work, research directions, and life changes into a staged execution loop.
 
-It is built around the Loop Learning OS method:
+It replaces the earlier Personalized Lifelong Learning skill with a broader goal-support workflow:
 
 ```text
-wish -> goal contract -> current position -> gap diagnosis -> learning map
--> stage path -> plan -> learning / practice / output -> feedback
--> review -> adjust or graduate
+vision or idea -> clarify the real goal -> locate current position
+-> draw target milestones -> break down the current stage
+-> coach execution -> review and adjust -> confirm achievement or next version
 ```
 
-This project is not limited to Codex. It is designed to work with general Agent foundations such as Codex, Claude, ChatGPT, Coze, Dify-style workflows, custom open-source model agents, or a future Web/App shell.
+The core upgrade is simple but important: the agent should locate the user's current position, not always ask for a current level. Current level is only one useful lens for games, exams, and skill training. Projects, habits, life decisions, research directions, and product bets need different position diagnostics.
 
 ## What It Does
 
-Personalized Lifelong Learning helps an agent guide learners through:
+Life Vision Board helps an agent guide users through:
 
-- clarifying vague learning goals
-- assessing current level with evidence
-- diagnosing the gap to the target
-- creating a learning map
-- planning a concrete 7-day path
-- tutoring and coaching execution
-- reviewing progress
-- updating learner state memory
+- clarifying vague visions or goals
+- assessing the current position with a method that matches the goal type
+- identifying the distance to the target
+- drawing target milestones before detailed planning
+- turning the current milestone into executable actions
+- coaching execution through feedback, critique, decisions, or practice
+- reviewing progress and adjusting the route
+- updating user state memory
 
 ## Project Structure
 
@@ -33,16 +33,16 @@ Personalized Lifelong Learning helps an agent guide learners through:
 ├── agent-pack.json                  # Platform-neutral manifest
 ├── INSTALL.md                       # Installation guide
 ├── skills/
-│   ├── personalized-lifelong-learning/       # Installable Codex Skill package
+│   ├── life-vision-board/           # Installable Codex Skill package
 │   ├── goal-clarification.md        # Agent Pack phase docs
-│   ├── level-assessment.md
-│   ├── learning-map.md
-│   ├── path-planning.md
+│   ├── current-stage-assessment.md
+│   ├── target-milestones.md
+│   ├── stage-goal-decomposition.md
 │   ├── resource-curation.md
-│   ├── tutoring-coach.md
+│   ├── personalized-coaching.md
 │   ├── review-adjustment.md
 │   └── visual-rendering.md
-├── schemas/                         # Learner and plan state templates
+├── schemas/                         # Goal and user state templates
 ├── scripts/                         # Local installation helpers
 └── tests/                           # Validation and transcript harness
 ```
@@ -61,18 +61,18 @@ On macOS/Linux:
 bash ./scripts/install-codex-skill.sh
 ```
 
-Then restart Codex so the `personalized-lifelong-learning` skill is picked up.
+Then restart Codex so the `life-vision-board` skill is picked up.
 
 If installing directly from a GitHub repo with a Codex skill installer, use the skill path:
 
 ```text
-skills/personalized-lifelong-learning
+skills/life-vision-board
 ```
 
 Example:
 
 ```bash
-install-skill-from-github --repo MichaelFromWH/personalized-lifelong-learning --path skills/personalized-lifelong-learning
+install-skill-from-github --repo MichaelFromWH/personalized-lifelong-learning --path skills/life-vision-board
 ```
 
 See [INSTALL.md](INSTALL.md) for more options.
@@ -103,7 +103,7 @@ powershell -ExecutionPolicy Bypass -File .\tests\test-transcript-harness.ps1
 Run standalone Codex Skill validation:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\skills\personalized-lifelong-learning\scripts\validate-skill.ps1
+powershell -ExecutionPolicy Bypass -File .\skills\life-vision-board\scripts\validate-skill.ps1
 ```
 
 The transcript harness generates:
@@ -114,12 +114,10 @@ The transcript harness generates:
 
 ## Status
 
-Current version: `0.1.0`
+Current version: `0.2.0`
 
 This is an early Agent Pack. It already includes a complete workflow, schemas, tests, and a Codex-installable skill. The next major upgrade is a real model transcript runner that calls OpenAI / Claude / Coze adapters instead of deterministic local transcripts.
 
 ## License
 
 MIT. See [LICENSE](LICENSE).
-
-

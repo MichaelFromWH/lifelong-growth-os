@@ -1,4 +1,4 @@
-﻿param(
+param(
   [string]$Root = "."
 )
 
@@ -38,20 +38,20 @@ $requiredFiles = @(
   "CONTRIBUTING.md",
   "agent-pack.json",
   "AGENT.md",
-  "docs/superpowers/specs/2026-06-16-loop-learning-os-agent-pack-design.md",
-  "docs/superpowers/plans/2026-06-16-loop-learning-os-agent-pack.md",
+  "docs/superpowers/specs/2026-06-16-life-vision-board-agent-pack-design.md",
+  "docs/superpowers/plans/2026-06-16-life-vision-board-agent-pack.md",
   "skills/goal-clarification.md",
-  "skills/level-assessment.md",
-  "skills/learning-map.md",
-  "skills/path-planning.md",
+  "skills/current-stage-assessment.md",
+  "skills/target-milestones.md",
+  "skills/stage-goal-decomposition.md",
   "skills/resource-curation.md",
-  "skills/tutoring-coach.md",
+  "skills/personalized-coaching.md",
   "skills/review-adjustment.md",
   "skills/visual-rendering.md",
-  "schemas/learner-profile.schema.md",
+  "schemas/user-profile.schema.md",
   "schemas/goal-contract.schema.md",
-  "schemas/learning-state.schema.md",
-  "schemas/learning-plan.schema.md",
+  "schemas/goal-state.schema.md",
+  "schemas/stage-plan.schema.md",
   "tests/evaluation-rubric.md",
   "tests/run-transcript-harness.ps1",
   "tests/test-transcript-harness.ps1",
@@ -63,25 +63,33 @@ foreach ($file in $requiredFiles) {
 }
 
 Assert-Contains "AGENT.md" @(
-  "Learning OS Orchestrator",
-  "learning_stage",
+  "Life Vision Board Orchestrator",
+  "goal_stage",
   "stage_transition",
   "STAGE_TRANSITION_RULES",
   "USER_FACING_LANGUAGE",
   "INTERNAL_LABELS_HIDDEN",
-  "OPENING_PROCESS_PREVIEW",
+  "KICKOFF_ORIENTATION",
   "STAGE_PURPOSE_BRIEF",
-  "OKR_DECOMPOSITION",
+  "GOAL_DECOMPOSITION",
   "KEY_RESULTS_TO_ACTIONS",
-  "LL_OS_STEP_GOAL_CLARIFICATION",
-  "LL_OS_STEP_LEVEL_ASSESSMENT",
-  "LL_OS_STEP_LEARNING_MAP",
-  "LL_OS_STEP_PATH_PLANNING",
-  "LL_OS_STEP_RESOURCE_CURATION",
-  "LL_OS_STEP_TUTORING_COACH",
-  "LL_OS_STEP_REVIEW_ADJUSTMENT",
-  "LL_OS_GUIDANCE_STYLE",
-  "LL_OS_GOAL_CATEGORY_ROUTING"
+  "LVB_STEP_GOAL_CLARIFICATION",
+  "LVB_STEP_CURRENT_STAGE_ASSESSMENT",
+  "LVB_STEP_TARGET_MILESTONES",
+  "LVB_STEP_STAGE_GOAL_DECOMPOSITION",
+  "LVB_STEP_RESOURCE_CURATION",
+  "LVB_STEP_PERSONALIZED_COACHING",
+  "LVB_STEP_REVIEW_ADJUSTMENT",
+  "GUIDANCE_STYLE",
+  "CURRENT_POSITION_ROUTING"
+)
+
+Assert-Contains "skills/current-stage-assessment.md" @(
+  "current position, not always current level",
+  "Project goals",
+  "Strategy or life goals",
+  "Habit goals",
+  "Research goals"
 )
 
 Assert-Contains "skills/visual-rendering.md" @(
@@ -94,20 +102,21 @@ Assert-Contains "skills/visual-rendering.md" @(
 
 Assert-Contains "tests/evaluation-rubric.md" @(
   "goal_contract",
-  "OKR breakdown",
-  "current_position",
-  "gap_diagnosis",
-  "learning_map",
+  "success signals",
+  "current_stage",
+  "distance_to_target",
+  "target_milestones",
   "stage_path",
-  "learning_plan",
-  "tutoring_feedback",
+  "stage_plan",
+  "coaching_feedback",
   "review_adjustment",
-  "learner_state_memory"
+  "user_state_memory"
 )
 
 Assert-Contains "README.md" @(
-  "Personalized Lifelong Learning",
-  "personalized-lifelong-learning",
+  "Life Vision Board",
+  "life-vision-board",
+  "current position, not always ask for a current level",
   "GitHub",
   "Codex",
   "Claude",
@@ -119,59 +128,59 @@ Assert-Contains "INSTALL.md" @(
   "Codex Skill",
   "Generic Agent",
   "GitHub",
-  "skills/personalized-lifelong-learning"
+  "skills/life-vision-board"
 )
 
 Assert-Contains "agent-pack.json" @(
-  '"name": "personalized-lifelong-learning"',
-  '"displayName": "Personalized Lifelong Learning"',
+  '"name": "life-vision-board"',
+  '"displayName": "Life Vision Board"',
   '"codexSkill"',
   '"genericAgent"'
 )
 
 Assert-FileExists "scripts/install-codex-skill.ps1" | Out-Null
 Assert-FileExists "scripts/install-codex-skill.sh" | Out-Null
-Assert-FileExists "skills/personalized-lifelong-learning/SKILL.md" | Out-Null
-Assert-FileExists "skills/personalized-lifelong-learning/agents/openai.yaml" | Out-Null
-Assert-FileExists "skills/personalized-lifelong-learning/references/orchestrator.md" | Out-Null
-Assert-FileExists "skills/personalized-lifelong-learning/references/state-schemas.md" | Out-Null
-Assert-FileExists "skills/personalized-lifelong-learning/references/evaluation-rubric.md" | Out-Null
-Assert-FileExists "skills/personalized-lifelong-learning/scripts/validate-skill.ps1" | Out-Null
+Assert-FileExists "skills/life-vision-board/SKILL.md" | Out-Null
+Assert-FileExists "skills/life-vision-board/agents/openai.yaml" | Out-Null
+Assert-FileExists "skills/life-vision-board/references/orchestrator.md" | Out-Null
+Assert-FileExists "skills/life-vision-board/references/state-schemas.md" | Out-Null
+Assert-FileExists "skills/life-vision-board/references/evaluation-rubric.md" | Out-Null
+Assert-FileExists "skills/life-vision-board/scripts/validate-skill.ps1" | Out-Null
 
-Assert-Contains "skills/personalized-lifelong-learning/SKILL.md" @(
-  "personalized-lifelong-learning",
-  "Loop Learning OS",
-  "learning_stage",
+Assert-Contains "skills/life-vision-board/SKILL.md" @(
+  "name: life-vision-board",
+  "Life Vision Board",
+  "goal_stage",
   "stage_transition",
   "STAGE_TRANSITION_RULES",
   "USER_FACING_LANGUAGE",
   "INTERNAL_LABELS_HIDDEN",
-  "OPENING_PROCESS_PREVIEW",
+  "KICKOFF_ORIENTATION",
   "STAGE_PURPOSE_BRIEF",
-  "OKR_DECOMPOSITION",
+  "GOAL_DECOMPOSITION",
   "KEY_RESULTS_TO_ACTIONS",
   "FLOW_GUARD",
   "MISSING_ARTIFACTS",
   "NO_PATH_WITHOUT_ASSESSMENT",
-  "CURRENT_POSITION_REQUIRED",
-  "GAP_DIAGNOSIS_REQUIRED",
+  "CURRENT_STAGE_REQUIRED",
+  "MILESTONES_REQUIRED",
   "goal contract",
-  "level assessment",
-  "learning map",
-  "path planning",
-  "tutoring",
+  "current stage assessment",
+  "target milestones",
+  "stage goal decomposition",
+  "personalized coaching",
   "review adjustment",
   "references/orchestrator.md"
 )
 
-Assert-Contains "schemas/learning-state.schema.md" @(
-  "learning_stage",
+Assert-Contains "schemas/goal-state.schema.md" @(
+  "goal_stage",
   "stage_transition_log",
   "last_stage_transition"
 )
 
-Assert-Contains "skills/personalized-lifelong-learning/references/state-schemas.md" @(
-  "learning_stage",
+Assert-Contains "skills/life-vision-board/references/state-schemas.md" @(
+  "goal_stage",
   "stage_transition_log",
   "last_stage_transition"
 )
@@ -181,8 +190,8 @@ if (-not (Test-Path -LiteralPath $scenarioDir -PathType Container)) {
   Add-Failure "Missing directory: tests/scenarios"
 } else {
   $scenarioFiles = Get-ChildItem -LiteralPath $scenarioDir -Filter "*.md" | Sort-Object Name
-  if ($scenarioFiles.Count -lt 8) {
-    Add-Failure "Expected at least 8 scenario files, found $($scenarioFiles.Count)"
+  if ($scenarioFiles.Count -lt 10) {
+    Add-Failure "Expected at least 10 scenario files, found $($scenarioFiles.Count)"
   }
 
   $requiredCategories = @(
@@ -193,7 +202,9 @@ if (-not (Test-Path -LiteralPath $scenarioDir -PathType Container)) {
     "category: creative_expression",
     "category: career_growth",
     "category: life_practice",
-    "category: research_exploration"
+    "category: research_exploration",
+    "category: strategy_decision",
+    "category: identity_growth"
   )
 
   $allScenarioText = ($scenarioFiles | ForEach-Object {
@@ -228,5 +239,3 @@ if ($failures.Count -gt 0) {
 
 Write-Host "VALIDATION PASSED" -ForegroundColor Green
 Write-Host "Required files, skill routing, schemas, visual rules, and scenario coverage are present."
-
-

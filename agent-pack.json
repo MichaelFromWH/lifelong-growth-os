@@ -1,14 +1,14 @@
-﻿{
-  "name": "personalized-lifelong-learning",
-  "displayName": "Personalized Lifelong Learning",
-  "version": "0.1.0",
-  "description": "A platform-neutral Agent Pack for running a dynamic personalized learning loop across general-purpose AI agents.",
-  "method": "Loop Learning OS",
+{
+  "name": "life-vision-board",
+  "displayName": "Life Vision Board",
+  "version": "0.2.0",
+  "description": "A platform-neutral Agent Pack for helping people clarify vague visions, locate their current position, define milestones, execute the next stage, and review progress.",
+  "method": "Life Vision Board OS",
   "entrypoints": {
     "genericAgent": "AGENT.md",
-    "codexSkill": "skills/personalized-lifelong-learning/SKILL.md"
+    "codexSkill": "skills/life-vision-board/SKILL.md"
   },
-  "skillPath": "skills/personalized-lifelong-learning",
+  "skillPath": "skills/life-vision-board",
   "supports": [
     "Codex",
     "Claude",
@@ -18,24 +18,21 @@
     "custom open-source model agents"
   ],
   "capabilities": [
-    "goal clarification",
-    "level assessment",
-    "gap diagnosis",
-    "learning map",
-    "path planning",
-    "resource curation",
-    "tutoring",
-    "review adjustment",
-    "learner state memory",
+    "vision clarification",
+    "current position assessment",
+    "distance diagnosis",
+    "target milestones",
+    "stage goal decomposition",
+    "support resource curation",
+    "personalized coaching",
+    "stage review adjustment",
+    "user state memory",
     "visual render brief generation"
   ],
   "tests": {
     "structural": "tests/validate-pack.ps1",
     "transcriptHarness": "tests/test-transcript-harness.ps1",
-    "codexSkill": "skills/personalized-lifelong-learning/scripts/validate-skill.ps1"
+    "codexSkill": "skills/life-vision-board/scripts/validate-skill.ps1"
   },
   "license": "MIT"
 }
-
-
-

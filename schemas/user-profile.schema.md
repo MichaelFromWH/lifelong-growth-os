@@ -1,10 +1,10 @@
-# Schema: Learner Profile
+# Schema: User Profile
 
-Use this schema to store relatively stable learner information. Update it when evidence changes.
+Use this schema to store relatively stable user information. Update it when evidence changes.
 
 ```yaml
-learner_profile:
-  learner_id: ""
+user_profile:
+  user_id: ""
   name_or_alias: ""
   background:
     education_or_work: ""
@@ -13,8 +13,8 @@ learner_profile:
   preferences:
     guidance_style: "action_coach"
     preferred_session_length_minutes: 30
-    preferred_learning_modes: []
-    disliked_learning_modes: []
+    preferred_work_modes: []
+    disliked_work_modes: []
     motivation_triggers: []
     friction_triggers: []
   constraints:
@@ -30,4 +30,3 @@ learner_profile:
     important_context: []
   updated_at: ""
 ```
-

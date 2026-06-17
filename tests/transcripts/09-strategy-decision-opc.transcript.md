@@ -1,14 +1,14 @@
-﻿# Transcript: 03-project-delivery-personal-website.md
+﻿# Transcript: 09-strategy-decision-opc.md
 
-- Category: project_delivery
+- Category: strategy_decision
 - Result: PASS
-- Score: 26/27
+- Score: 25/27
 
 ## Simulated Dialogue
 
 ### Turn 1 - User
 
-"我想学会做一个个人网站，最好两周内能上线一个能展示我作品的版本。"
+"I have several directions and all of them matter. I want to decide which bet should be first without lying to myself."
 
 ### Turn 2 - Life Vision Board Orchestrator: Process Preview
 
@@ -28,7 +28,7 @@ Stage Purpose:
 - Now we are making the goal concrete, so the user knows what "done" will look like.
 
 Goal Contract:
-- Category: project_delivery
+- Category: strategy_decision
 - Clarified goal: convert the user's vision into a concrete target with observable success signals.
 - Success signals: the user produces or records real output that proves progress.
 - Time horizon: first review after 7 days unless the scenario states a stricter deadline.
@@ -78,7 +78,7 @@ Milestone Route:
 - Risks: likely blockers from the scenario.
 - Checkpoints: observable review moments.
 
-Category-specific route hint: Use deliverable-first milestones and visible artifact checkpoints.
+Category-specific route hint: Use options, constraints, reversible tests, risks, and decision criteria.
 
 ### Turn 7 - Life Vision Board Orchestrator: 7-Day Stage Plan
 
@@ -124,18 +124,19 @@ User State Update:
 
 ## Scenario Acceptance Focus
 
-- Treat the goal as deliverable-first, not course-first.
-- Assess technical baseline, design taste, content readiness, hosting comfort, and available tools.
-- Map route from content structure to design, build, deploy, and polish.
-- Plan must produce visible artifacts by day 2 or 3.
+- Treat the goal as a strategy decision, not skill learning.
+- Assess options, values, constraints, downside risk, available evidence, and reversible tests.
+- Define success signals for a decision, such as a ranked bet, test plan, and kill criteria.
+- Create a first-week plan that produces decision evidence instead of a generic productivity plan.
 
 ## Scenario Failure Signals
 
-- Starts with a full HTML/CSS curriculum.
-- No deployment milestone.
-- No scope control for the first website version.
+- Asks for current skill level as the main diagnostic.
+- Gives motivational advice without decision criteria.
+- Recommends doing all directions at once.
+- Skips reversible tests and kill criteria.
 
 ## Harness Score
 
-Score: 26/27
+Score: 25/27
 

@@ -1,4 +1,4 @@
-# Scenario 02: Skill Training
+﻿# Scenario 02: Skill Training
 
 category: skill_training
 
@@ -13,10 +13,10 @@ A software engineer can read English documentation but freezes during meetings. 
 ## Expected Skill Chain
 
 1. `goal-clarification`
-2. `level-assessment`
-3. `learning-map`
-4. `path-planning`
-5. `tutoring-coach`
+2. `current-stage-assessment`
+3. `target-milestones`
+4. `stage-goal-decomposition`
+5. `personalized-coaching`
 6. `review-adjustment`
 
 ## Acceptance Focus
@@ -31,4 +31,5 @@ A software engineer can read English documentation but freezes during meetings. 
 - Gives grammar lessons as the main plan.
 - No speaking output required.
 - Does not adapt coaching style to anxiety.
+
 

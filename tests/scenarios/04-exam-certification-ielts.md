@@ -1,4 +1,4 @@
-# Scenario 04: Exam Certification
+﻿# Scenario 04: Exam Certification
 
 category: exam_certification
 
@@ -13,11 +13,11 @@ A graduate applicant needs IELTS 7.0 in three months. They have taken one mock t
 ## Expected Skill Chain
 
 1. `goal-clarification`
-2. `level-assessment`
-3. `learning-map`
-4. `path-planning`
+2. `current-stage-assessment`
+3. `target-milestones`
+4. `stage-goal-decomposition`
 5. `resource-curation`
-6. `tutoring-coach`
+6. `personalized-coaching`
 7. `review-adjustment`
 
 ## Acceptance Focus
@@ -32,4 +32,5 @@ A graduate applicant needs IELTS 7.0 in three months. They have taken one mock t
 - Gives generic English plan.
 - Ignores score breakdown.
 - No mock test or review cadence.
+
 
