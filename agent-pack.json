@@ -9,8 +9,31 @@
     "codexSkill": "skills/life-vision-board/SKILL.md"
   },
   "skillPath": "skills/life-vision-board",
+  "productForms": {
+    "agentPlatformPlugin": {
+      "description": "Package Life Vision Board OS into third-party agent platforms.",
+      "targets": [
+        "Codex",
+        "Claude Code",
+        "Coze",
+        "Dify-style workflows",
+        "custom open-source agent runtimes"
+      ]
+    },
+    "standaloneProduct": {
+      "description": "Use the same OS inside a persistent Web/App Life Portfolio Dashboard.",
+      "coreSurfaces": [
+        "Life Portfolio Dashboard",
+        "Goal detail page",
+        "Daily or weekly focus view",
+        "Review dashboard",
+        "Visual board"
+      ]
+    }
+  },
   "supports": [
     "Codex",
+    "Claude Code",
     "Claude",
     "ChatGPT",
     "Coze",

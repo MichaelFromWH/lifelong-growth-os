@@ -38,6 +38,7 @@ $requiredFiles = @(
   "CONTRIBUTING.md",
   "agent-pack.json",
   "AGENT.md",
+  "docs/product-forms-and-integration-strategy.md",
   "docs/superpowers/specs/2026-06-16-life-vision-board-agent-pack-design.md",
   "docs/superpowers/plans/2026-06-16-life-vision-board-agent-pack.md",
   "skills/goal-clarification.md",
@@ -117,10 +118,25 @@ Assert-Contains "README.md" @(
   "Life Vision Board",
   "life-vision-board",
   "current position, not always ask for a current level",
+  "Product Forms",
+  "Life Portfolio Dashboard",
   "GitHub",
   "Codex",
+  "Claude Code",
   "Claude",
   "ChatGPT",
+  "Coze"
+)
+
+Assert-Contains "docs/product-forms-and-integration-strategy.md" @(
+  "Product Forms And Integration Strategy",
+  "Shared Kernel",
+  "Agent Platform Plugin",
+  "Standalone Web/App Product",
+  "Adapter Boundary",
+  "Life Portfolio Dashboard",
+  "Codex",
+  "Claude Code",
   "Coze"
 )
 
@@ -134,6 +150,9 @@ Assert-Contains "INSTALL.md" @(
 Assert-Contains "agent-pack.json" @(
   '"name": "life-vision-board"',
   '"displayName": "Life Vision Board"',
+  '"productForms"',
+  '"agentPlatformPlugin"',
+  '"standaloneProduct"',
   '"codexSkill"',
   '"genericAgent"'
 )

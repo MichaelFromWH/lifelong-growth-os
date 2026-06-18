@@ -25,12 +25,22 @@ Life Vision Board helps an agent guide users through:
 - reviewing progress and adjusting the route
 - updating user state memory
 
+## Product Forms
+
+Life Vision Board has two product forms that share the same OS:
+
+- Agent platform plugin: package the workflow into Codex, Claude Code, Coze, Dify-style workflows, and custom agent runtimes.
+- Standalone Web/App product: turn the same workflow into a persistent Life Portfolio Dashboard with goals, milestones, evidence, reviews, and reminders.
+
+The shared kernel is the orchestrator, phase skills, schemas, rubrics, and future adapter layer. See [docs/product-forms-and-integration-strategy.md](docs/product-forms-and-integration-strategy.md).
+
 ## Project Structure
 
 ```text
 .
 ├── AGENT.md                         # Generic agent orchestrator
 ├── agent-pack.json                  # Platform-neutral manifest
+├── docs/                            # Product and architecture notes
 ├── INSTALL.md                       # Installation guide
 ├── skills/
 │   ├── life-vision-board/           # Installable Codex Skill package
@@ -79,7 +89,7 @@ See [INSTALL.md](INSTALL.md) for more options.
 
 ## Use With Generic Agents
 
-For Claude, ChatGPT, Coze, or other Agent runtimes:
+For Claude Code, ChatGPT, Coze, Dify-style workflows, or other Agent runtimes:
 
 1. Load [AGENT.md](AGENT.md) as the system or developer instruction.
 2. Expose the phase files in [skills](skills) as callable workflow references.

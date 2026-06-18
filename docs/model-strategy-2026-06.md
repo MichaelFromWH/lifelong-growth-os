@@ -11,7 +11,7 @@ I did not find a primary source for a model called `GLM M3`.
 The likely matches are:
 
 - `MiniMax-M3`: a native multimodal model with 1M context, about 428B total parameters and 23B active parameters. Official Hugging Face and GitHub pages exist.
-- `BGE-M3`: an embedding model for retrieval, supporting dense retrieval, lexical matching, and multi-vector interaction. It is not a chat/tutoring model.
+- `BGE-M3`: an embedding model for retrieval, supporting dense retrieval, lexical matching, and multi-vector interaction. It is not a chat or coaching model.
 - `GLM`: the Z.ai / Zhipu family currently has GLM-4.5, GLM-4.7, GLM-5, GLM-V, GLM-OCR, etc.
 
 ## Product Requirements
@@ -59,7 +59,7 @@ Use multimodal models for:
 Recommended candidates:
 
 - `Qwen3-VL`: strong general vision-language direction, especially if the main text model is also Qwen.
-- `MiniMax-M3`: native multimodality plus long context, promising for rich learning sessions.
+- `MiniMax-M3`: native multimodality plus long context, promising for rich goal-support sessions.
 - `MiniCPM-V`: good edge-deployment direction, useful if the mobile app eventually wants local or low-cost visual understanding.
 - `GLM-V / GLM-OCR`: useful evaluation track for Chinese OCR and visual understanding.
 
@@ -109,7 +109,7 @@ Practical recommendation:
 
 ```text
 Client Web/App
-  -> Learning Orchestrator API
+  -> Life Vision Board Orchestrator API
     -> Main LLM Router
        -> Qwen default planner/coach
        -> GLM / MiniMax / Kimi / DeepSeek evaluation routes
