@@ -40,6 +40,8 @@ $requiredFiles = @(
   "AGENT.md",
   "docs/product-forms-and-integration-strategy.md",
   "docs/standalone-web-app-goal-plan-2026-06.md",
+  "docs/assets/standalone-web-app-goal-plan-cn.svg",
+  "docs/assets/standalone-web-app-goal-plan-cn.png",
   "docs/superpowers/specs/2026-06-16-life-vision-board-agent-pack-design.md",
   "docs/superpowers/plans/2026-06-16-life-vision-board-agent-pack.md",
   "skills/goal-clarification.md",
@@ -96,7 +98,8 @@ Assert-Contains "skills/current-stage-assessment.md" @(
 
 Assert-Contains "skills/visual-rendering.md" @(
   "TEXT_FIRST",
-  "USER_CONFIRMATION_REQUIRED",
+  "SAME_REPLY_VISUAL_REQUIRED",
+  "HANDOFF_AFTER_VISUAL",
   "GPT-image-2",
   "MODERN_AESTHETIC",
   "CLEAR_STRUCTURE"
@@ -112,6 +115,8 @@ Assert-Contains "tests/evaluation-rubric.md" @(
   "stage_plan",
   "coaching_feedback",
   "review_adjustment",
+  "visual_companion",
+  "stage_handoff",
   "user_state_memory"
 )
 
@@ -189,6 +194,7 @@ Assert-Contains "skills/life-vision-board/SKILL.md" @(
   "INTERNAL_LABELS_HIDDEN",
   "KICKOFF_ORIENTATION",
   "STAGE_PURPOSE_BRIEF",
+  "STAGE_HANDOFF_CONFIRMATION",
   "GOAL_DECOMPOSITION",
   "KEY_RESULTS_TO_ACTIONS",
   "FLOW_GUARD",
@@ -196,12 +202,15 @@ Assert-Contains "skills/life-vision-board/SKILL.md" @(
   "NO_PATH_WITHOUT_ASSESSMENT",
   "CURRENT_STAGE_REQUIRED",
   "MILESTONES_REQUIRED",
+  "VISUAL_COMPANION_REQUIRED",
+  "HANDOFF_REQUIRED",
   "goal contract",
   "current stage assessment",
   "target milestones",
   "stage goal decomposition",
   "personalized coaching",
   "review adjustment",
+  "visual_companion",
   "references/orchestrator.md"
 )
 

@@ -4,6 +4,12 @@ Date: 2026-06-18
 
 This document uses Life Vision Board OS to turn the standalone Web/App product direction into a concrete execution loop.
 
+Chinese visual summary:
+
+![Life Vision Board 独立 Web/App 产品路线图](assets/standalone-web-app-goal-plan-cn.png)
+
+Editable source: `docs/assets/standalone-web-app-goal-plan-cn.svg`
+
 ## Goal Contract Draft
 
 - Goal category: `project_delivery` primary, `strategy_decision` and `research_exploration` secondary.
@@ -176,4 +182,3 @@ Create the standalone MVP spec first. The spec should decide:
 3. What it explicitly will not do.
 4. What data state the Dashboard must render.
 5. What counts as a successful first demo.
-

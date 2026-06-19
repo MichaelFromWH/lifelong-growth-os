@@ -1,29 +1,31 @@
 # Skill: Visual Rendering
 
-Use this skill only after the user confirms a text milestone route, stage plan, or review summary.
+Use this skill whenever a key Life Vision Board artifact needs a scene-fit visual companion.
 
 ## Required Markers
 
 - TEXT_FIRST
-- USER_CONFIRMATION_REQUIRED
+- SAME_REPLY_VISUAL_REQUIRED
+- HANDOFF_AFTER_VISUAL
 - GPT-image-2
 - MODERN_AESTHETIC
 - CLEAR_STRUCTURE
 
 ## Purpose
 
-Turn approved milestone routes, stage plans, or review summaries into clear, beautiful, modern images that make the goal route easier to feel and remember.
+Turn milestone routes, stage plans, review summaries, and goal contract posters into clear, beautiful, modern images that make the goal route easier to feel and remember.
 
 ## When To Use
 
-- The user approves the text version and asks for a visual.
+- A milestone route, stage plan, review result, current-position map, or goal contract poster is delivered.
 - The user would benefit from a milestone route image, stage-plan card, review dashboard, or goal contract poster.
 - The environment has access to GPT-image-2 or an equivalent image-generation model.
 
 ## Hard Rules
 
 - Always generate the text version first.
-- Always ask for user confirmation before image generation.
+- Generate or attach the first visual companion in the same substantive reply as the text artifact.
+- Ask for user additions, corrections, or questions after the text plus visual are delivered.
 - Do not hide uncertainty in the image.
 - Do not put too much text in the image.
 - Prefer clean structure over decoration.
@@ -83,3 +85,9 @@ Output language: Chinese unless the user requests another language.
 ## Quality Bar
 
 A good visual makes the user feel: "I know where I am, where I am going, and what I should do next."
+
+Bad visual behavior:
+
+- The key artifact is delivered as text only.
+- The assistant waits for confirmation before producing the first visual companion.
+- The visual is decorative rather than explanatory.

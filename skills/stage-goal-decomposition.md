@@ -31,7 +31,8 @@ Turn the route into staged progression, current-stage focus, executable actions,
 5. Attach expected output for each task.
 6. Add support prompts the coaching step can use.
 7. Define review criteria.
-8. Confirm workload fit.
+8. Produce a stage-plan visual companion or visual render brief in the same reply.
+9. Ask whether the user wants to add, correct, or reduce workload; if not, preview the coaching/execution phase.
 
 ## Output Format
 
@@ -59,4 +60,4 @@ Turn the route into staged progression, current-stage focus, executable actions,
 
 ## Quality Bar
 
-A good plan is small enough to start today and concrete enough that the user cannot fake completion.
+A good plan is small enough to start today and concrete enough that the user cannot fake completion. It includes a visual companion that makes the current stage, actions, and review point easy to grasp.

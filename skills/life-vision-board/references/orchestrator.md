@@ -20,7 +20,7 @@ vision or idea -> goal contract -> current stage -> target milestones
 | Milestones are accepted | Create a stage path and 7-day plan. |
 | User is executing | Coach, critique, decide, practice, and update evidence. |
 | Review date arrives or progress changes | Run review adjustment. |
-| User approves text route or plan for image | Create visual render brief. |
+| Key artifact is delivered | Create text and visual companion in the same substantive reply, then ask for corrections and preview the next phase. |
 
 ## User-Facing Language
 
@@ -45,6 +45,14 @@ Here is how we will do this: first we will clarify what you really want, then lo
 ```
 
 When moving to a new phase, add one purpose sentence before the question or task. Example: "This step is not a test; it helps us choose a starting point that fits reality."
+
+After delivering a goal contract, current-stage assessment, milestone route, stage plan, or review result, close the phase with a natural handoff:
+
+```markdown
+We have completed this step and its visual map. Is there anything you want to add or correct? If not, I will move into the next step and [plain-language preview].
+```
+
+Do not ask for confirmation before producing the first visual companion for a key artifact. The confirmation happens after text plus visual are delivered.
 
 ## FLOW_GUARD State Machine
 
@@ -72,6 +80,8 @@ Hard gates:
 - `MILESTONES_REQUIRED`: Target milestones must be explicit before detailed path planning.
 - `NO_PATH_WITHOUT_ASSESSMENT`: Do not produce a full path when the current-stage assessment is missing.
 - `PREMATURE_PLANNING_GUARD`: Do not produce a detailed plan before goal contract, current stage, milestone route, and current priority are clear.
+- `VISUAL_COMPANION_REQUIRED`: Milestone routes, stage plans, and review dashboards are incomplete without a visual companion when an image, diagram, or render-brief tool is available.
+- `HANDOFF_REQUIRED`: After key artifacts, ask for additions or corrections and preview the next phase.
 - Resource curation is not allowed before goal contract, current stage, and target milestones.
 
 If the user asks for a plan too early, say the plan is provisional or blocked, then run the next assessment step.
@@ -124,8 +134,14 @@ When the user asks for direction, planning, gap analysis, or positioning, includ
 - Current focus:
 - Why this matters:
 
+## Visual Companion
+- Generated image, diagram, or visual render brief:
+
 ## Next Action
 - 
+
+## Handoff
+- Ask for additions or corrections, and preview the next phase.
 ```
 
 If any section is unknown, write `missing` and ask for the evidence needed to fill it.
@@ -180,6 +196,7 @@ A good milestone route includes:
 - Dependencies.
 - Risk points.
 - Observable checkpoints.
+- A scene-fit visual companion delivered in the same reply.
 
 Avoid syllabus dumps.
 
@@ -195,6 +212,7 @@ Include:
 - Expected output.
 - Coach check.
 - Review rule.
+- Stage-plan visual companion delivered in the same reply.
 
 ## Personalized Coaching
 

@@ -47,18 +47,22 @@ Require-Text "SKILL.md" @(
   "INTERNAL_LABELS_HIDDEN",
   "KICKOFF_ORIENTATION",
   "STAGE_PURPOSE_BRIEF",
+  "STAGE_HANDOFF_CONFIRMATION",
   "GOAL_DECOMPOSITION",
   "KEY_RESULTS_TO_ACTIONS",
   "MISSING_ARTIFACTS",
   "NO_PATH_WITHOUT_ASSESSMENT",
   "CURRENT_STAGE_REQUIRED",
   "MILESTONES_REQUIRED",
+  "VISUAL_COMPANION_REQUIRED",
+  "HANDOFF_REQUIRED",
   "goal contract",
   "current stage assessment",
   "target milestones",
   "stage goal decomposition",
   "personalized coaching",
   "review adjustment",
+  "visual_companion",
   "current position, not always their current level"
 )
 

@@ -10,7 +10,7 @@ Score each criterion from 0 to 3:
 Pass threshold:
 
 - Each critical item should be at least 2.
-- Total score should be at least 22 out of 27.
+- Total score should be at least 26 out of 33.
 - If any critical item is 0, the conversation fails.
 
 | Key | Criterion | Good Standard |
@@ -23,6 +23,8 @@ Pass threshold:
 | stage_plan | Stage plan | First 7 days are concrete, realistic, and output-producing. |
 | coaching_feedback | Coaching feedback | Agent asks for user output and gives useful feedback. |
 | review_adjustment | Review adjustment | Agent defines reassessment and plan-change triggers. |
+| visual_companion | Visual companion | Key artifacts such as milestone routes, stage plans, and review dashboards include a scene-fit image, diagram, or render brief in the same reply. |
+| stage_handoff | Stage handoff | After key artifacts, agent asks for additions or corrections and previews the next phase naturally. |
 | user_state_memory | User state memory | Preferences, evidence, weaknesses, and plan state are updated. |
 
 Common failures:
@@ -35,5 +37,8 @@ Common failures:
 - Making the milestone route a topic list.
 - Giving consumption-only daily tasks.
 - Forgetting review rules.
+- Delivering milestone routes, stage plans, or review dashboards as text only.
+- Asking for confirmation before producing the first visual companion for a key artifact.
+- Ending a phase without asking for additions or corrections and previewing the next phase.
 - Ignoring guidance style.
 - Overclaiming in high-stakes domains.

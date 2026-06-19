@@ -37,11 +37,11 @@ Because this version is a Markdown Agent Pack rather than a running app, the tes
 
 ## Findings
 
-### Finding 1: Visual generation needs a hard text-first rule
+### Finding 1: Visual generation needs a hard text-first and same-reply rule
 
-Risk: The agent might generate polished images too early, before the user approves the milestone route or stage plan.
+Risk: The agent might either generate decorative visuals too early or skip visuals entirely after producing a milestone route, stage plan, or review dashboard.
 
-Fix applied: `skills/visual-rendering.md` includes explicit markers `TEXT_FIRST` and `USER_CONFIRMATION_REQUIRED`, plus a hard rule requiring user confirmation.
+Fix applied: `skills/visual-rendering.md` includes explicit markers `TEXT_FIRST`, `SAME_REPLY_VISUAL_REQUIRED`, and `HANDOFF_AFTER_VISUAL`. Key artifacts now require text plus a scene-fit visual in the same substantive reply, followed by a correction question and next-phase preview.
 
 ### Finding 2: Generality needs category routing
 
