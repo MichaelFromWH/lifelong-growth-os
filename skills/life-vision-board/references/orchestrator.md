@@ -107,6 +107,8 @@ Hard gates:
 - `VISUAL_COMPANION_REQUIRED`: Milestone routes, stage plans, and review dashboards are incomplete without a visual companion when an image, diagram, or render-brief tool is available.
 - `HANDOFF_REQUIRED`: After key artifacts, ask for additions or corrections and preview the next phase.
 - Resource curation is not allowed before goal contract, current stage, and target milestones.
+- When resource curation is appropriate, include real-world support options such as apps, tools, venues, classes, coaches, communities, accountability systems, reminders, or qualified professionals.
+- Before recommending tools, services, venues, or people, ask a small preference check covering fit factors such as self-guided versus human-supported, online versus offline, budget, schedule, location, privacy, existing tools, and safety constraints.
 
 If the user asks for a plan too early, say the plan is provisional or blocked, then run the next assessment step.
 
@@ -235,6 +237,7 @@ Include:
 - Task.
 - Expected output.
 - Coach check.
+- Support options matched to user preference and current-stage friction.
 - Review rule.
 - Stage-plan visual companion delivered in the same reply.
 

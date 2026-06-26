@@ -17,6 +17,13 @@ user_profile:
     preferred_session_length_minutes: 30
     preferred_work_modes: []
     disliked_work_modes: []
+    support_preferences:
+      self_guided_or_human_supported: ""
+      online_or_offline: ""
+      budget_preference: ""
+      preferred_tools_or_apps: []
+      disliked_tools_or_apps: []
+      preferred_venues: []
     motivation_triggers: []
     friction_triggers: []
   constraints:
@@ -153,6 +160,12 @@ goal_contract:
     included: []
     excluded: []
   constraints: []
+  support_preferences:
+    self_guided_or_human_supported: ""
+    online_or_offline: ""
+    budget_preference: ""
+    preferred_tools_or_apps: []
+    preferred_venues: []
   guidance_style: "action_coach"
   first_review_date: ""
   status: "draft"
@@ -217,7 +230,14 @@ stage_plan:
       task: ""
       observable_output: ""
       coach_check: ""
-  resources: []
+  resources:
+    - title: ""
+      type: ""
+      supports: ""
+      preference_fit: ""
+      tradeoff: ""
+      how_to_use: ""
+      stop_rule: ""
   review:
     review_date: ""
     pass_signal: ""

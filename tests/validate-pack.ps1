@@ -106,6 +106,16 @@ Assert-Contains "skills/visual-rendering.md" @(
   "CLEAR_STRUCTURE"
 )
 
+Assert-Contains "skills/resource-curation.md" @(
+  "Preference Check",
+  "realistic support options",
+  "apps, tools, classes, coaches, communities, venues",
+  "fitness app",
+  "gym",
+  "Preference Fit",
+  "Tradeoff"
+)
+
 Assert-Contains "tests/evaluation-rubric.md" @(
   "goal_contract",
   "success signals",
@@ -157,6 +167,7 @@ Assert-Contains "agent-pack.json" @(
   '"productName": "Lifelong Growth OS"',
   '"deliveryMode"',
   '"agentPlatformSkill"',
+  "real-world support option matching",
   '"codexSkill"',
   '"genericAgent"'
 )
@@ -195,6 +206,7 @@ Assert-Contains "skills/life-vision-board/SKILL.md" @(
   "target milestones",
   "stage goal decomposition",
   "personalized coaching",
+  "support_options",
   "review adjustment",
   "visual_companion",
   "references/orchestrator.md"
@@ -209,7 +221,10 @@ Assert-Contains "schemas/goal-state.schema.md" @(
 Assert-Contains "skills/life-vision-board/references/state-schemas.md" @(
   "goal_stage",
   "stage_transition_log",
-  "last_stage_transition"
+  "last_stage_transition",
+  "support_preferences",
+  "preference_fit",
+  "tradeoff"
 )
 
 $scenarioDir = Join-Path $Root "tests/scenarios"

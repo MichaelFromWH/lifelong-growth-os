@@ -95,6 +95,13 @@ Stage Purpose:
 - Day 6: SS3 complete a realistic mini-task.
 - Day 7: SS3 review evidence and adjust the route.
 
+Support Options:
+- Preference Check: ask whether the user prefers self-guided, app-assisted, human-supported, or environment-supported help before recommending tools or services.
+- Option A: a lightweight app/tool/template for guidance, tracking, or reminders.
+- Option B: a class, coach, expert, community, venue, or accountability partner when feedback, safety, or environment matters.
+- Use only options that fit the user's budget, schedule, access, privacy, and safety constraints.
+- Stop Rule: if a support option becomes a distraction, too expensive, unsafe, or unused, simplify the plan.
+
 ### Turn 8 - Lifelong Growth OS Orchestrator: Coaching Session
 
 Stage Purpose:
@@ -127,6 +134,8 @@ User State Update:
 
 - Add safety boundary and avoid medical overclaim.
 - Assess schedule, current activity, pain constraints, sleep, motivation, and environment.
+- Ask preference questions before recommending supports: home training, gym, Keep-style fitness app, swimming, sports, personal trainer, or low-friction walking/mobility habit.
+- Offer feasible support options tied to the current stage, such as an app for guidance/tracking, a gym for equipment and environment, or a coach/physio when safety and form feedback matter.
 - Start with low-risk habit plan and evidence tracking.
 - Include trigger-based adjustment if pain worsens or adherence fails.
 
@@ -135,6 +144,7 @@ User State Update:
 - Gives intense workout plan.
 - Ignores back discomfort.
 - No habit friction diagnosis.
+- Recommends an app, gym, or trainer without asking preference, cost, access, and safety constraints.
 
 ## Harness Score
 

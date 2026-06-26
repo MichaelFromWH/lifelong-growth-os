@@ -25,6 +25,7 @@ The core upgrade is simple but important: the agent should locate the user's cur
 - identifying the distance to the target
 - drawing target milestones before detailed planning
 - turning the current milestone into executable actions
+- matching real-world support options such as apps, tools, venues, coaches, communities, reminders, or courses to the user's preferences
 - coaching execution through feedback, critique, decisions, or practice
 - reviewing progress and adjusting the route
 - updating user state memory

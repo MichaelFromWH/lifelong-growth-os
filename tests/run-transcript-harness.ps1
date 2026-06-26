@@ -195,6 +195,13 @@ Stage Purpose:
 - Day 6: SS3 complete a realistic mini-task.
 - Day 7: SS3 review evidence and adjust the route.
 
+Support Options:
+- Preference Check: ask whether the user prefers self-guided, app-assisted, human-supported, or environment-supported help before recommending tools or services.
+- Option A: a lightweight app/tool/template for guidance, tracking, or reminders.
+- Option B: a class, coach, expert, community, venue, or accountability partner when feedback, safety, or environment matters.
+- Use only options that fit the user's budget, schedule, access, privacy, and safety constraints.
+- Stop Rule: if a support option becomes a distraction, too expensive, unsafe, or unused, simplify the plan.
+
 ### Turn 8 - Lifelong Growth OS Orchestrator: Coaching Session
 
 Stage Purpose:

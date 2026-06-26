@@ -21,6 +21,8 @@ stage_plan:
     - title: ""
       type: ""
       supports: ""
+      preference_fit: ""
+      tradeoff: ""
       how_to_use: ""
       stop_rule: ""
   review:

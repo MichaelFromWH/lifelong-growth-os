@@ -15,6 +15,13 @@ user_profile:
     preferred_session_length_minutes: 30
     preferred_work_modes: []
     disliked_work_modes: []
+    support_preferences:
+      self_guided_or_human_supported: ""
+      online_or_offline: ""
+      budget_preference: ""
+      preferred_tools_or_apps: []
+      disliked_tools_or_apps: []
+      preferred_venues: []
     motivation_triggers: []
     friction_triggers: []
   constraints:

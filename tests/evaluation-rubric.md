@@ -45,6 +45,7 @@ Use these checks when the scenario is life-level or multi-goal:
 ## Common Failure Signals
 
 - The agent jumps to resources before clarifying the goal.
+- The agent recommends apps, gyms, courses, coaches, or other supports without checking preference, access, cost, safety, and current-stage fit.
 - The agent skips success signals after the goal is clear.
 - The plan is generic and could fit anyone.
 - The agent treats self-rating as proven current stage.

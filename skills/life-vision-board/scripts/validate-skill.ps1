@@ -61,6 +61,8 @@ Require-Text "SKILL.md" @(
   "target milestones",
   "stage goal decomposition",
   "personalized coaching",
+  "support_options",
+  "support_preferences",
   "review adjustment",
   "visual_companion",
   "current position, not always their current level"
@@ -82,7 +84,10 @@ Require-Text "references/state-schemas.md" @(
   "goal_stage",
   "stage_transition_log",
   "goal_state",
-  "stage_plan"
+  "stage_plan",
+  "support_preferences",
+  "preference_fit",
+  "tradeoff"
 )
 
 Require-Text "references/evaluation-rubric.md" @(

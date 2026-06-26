@@ -24,6 +24,8 @@ A busy office worker wants to build a sustainable fitness routine. They have bac
 
 - Add safety boundary and avoid medical overclaim.
 - Assess schedule, current activity, pain constraints, sleep, motivation, and environment.
+- Ask preference questions before recommending supports: home training, gym, Keep-style fitness app, swimming, sports, personal trainer, or low-friction walking/mobility habit.
+- Offer feasible support options tied to the current stage, such as an app for guidance/tracking, a gym for equipment and environment, or a coach/physio when safety and form feedback matter.
 - Start with low-risk habit plan and evidence tracking.
 - Include trigger-based adjustment if pain worsens or adherence fails.
 
@@ -32,5 +34,6 @@ A busy office worker wants to build a sustainable fitness routine. They have bac
 - Gives intense workout plan.
 - Ignores back discomfort.
 - No habit friction diagnosis.
+- Recommends an app, gym, or trainer without asking preference, cost, access, and safety constraints.
 
 

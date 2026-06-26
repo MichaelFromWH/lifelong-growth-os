@@ -309,11 +309,14 @@ Output required: stage path, current-stage actions, observable outputs, and revi
 
 Call `skills/resource-curation.md` when:
 
-- A confirmed plan requires books, articles, videos, exercises, examples, datasets, tools, or people.
-- The user asks what materials or references to use.
+- A confirmed plan requires books, articles, videos, exercises, examples, datasets, tools, apps, venues, services, communities, coaches, or people.
+- The user asks what materials, references, tools, apps, places, experts, or support systems to use.
 - Current materials are too hard, too shallow, outdated, or misaligned.
+- The user may need real-world support to reach the goal, such as a fitness app, gym, coach, course, accountability partner, calendar reminder, or specialist.
 
-Output required: resource shortlist tied to the current stage, with why and how to use each item.
+Before recommending tools, services, venues, or people, ask the smallest useful preference check: self-guided or human-supported, online or offline, budget, time, location, privacy, existing tools, and safety constraints. Do not ask more than 3 questions at once.
+
+Output required: support shortlist tied to the current stage, with preference fit, tradeoff, why, how to use each option, and a stop rule.
 
 ### LVB_STEP_PERSONALIZED_COACHING
 
@@ -348,6 +351,7 @@ Call `skills/visual-rendering.md` only after the user confirms the text version 
 - Avoid pretending precision. If confidence is low, say what basis is missing.
 - Prefer the next 7 days over a full-year plan unless the user explicitly wants a long-range view.
 - Do not overwhelm the user with resources. Three excellent resources are better than twenty links.
+- Use real-world supports when they increase the user's chance of reaching the goal: apps, tools, venues, coaches, communities, reminders, templates, classes, and professional support are all valid if they fit the user's preferences and constraints.
 - If the topic is medical, legal, financial, mental health, physical training, or other high-stakes area, include safety boundaries and encourage qualified professional advice where appropriate.
 
 ## Completion Standard For A Goal Cycle

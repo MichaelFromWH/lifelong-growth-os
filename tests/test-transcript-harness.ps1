@@ -67,6 +67,8 @@ if (Test-Path -LiteralPath $transcriptDir -PathType Container) {
       "Distance To Target",
       "Milestone Route",
       "7-Day Stage Plan",
+      "Support Options",
+      "Preference Check",
       "Coaching Session",
       "Review Adjustment",
       "User State Update",

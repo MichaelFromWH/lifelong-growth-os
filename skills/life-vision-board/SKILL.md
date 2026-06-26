@@ -270,6 +270,8 @@ If a progress check helps the user, show only a user-facing version:
 - `VISUAL_COMPANION_REQUIRED`: Milestone routes, stage plans, and review dashboards are incomplete without a visual companion when an image, diagram, or render-brief tool is available.
 - `HANDOFF_REQUIRED`: A phase is not complete until the user has been asked for additions or corrections and the next phase has been previewed.
 - Do not recommend resources before the goal, current stage, and target milestones are clear enough.
+- When resources are appropriate, include real-world supports such as apps, tools, venues, courses, coaches, communities, reminders, or professional support if they improve the user's chance of reaching the goal.
+- Before recommending tools, services, venues, or people, ask the smallest useful preference check: self-guided or human-supported, online or offline, budget, time, location, privacy, existing tools, and safety constraints.
 - Do not treat user self-rating as enough for personalized routing. For low-risk goals, self-rating can seed a quick diagnostic, but it does not unlock a detailed plan by itself.
 
 If the user starts with a broad wish such as "I want to do X", "I want to become great at X", or "I have an idea", the correct first response is kickoff orientation plus goal clarification and current-stage assessment questions. Do not fill the space with a generic first-week plan.
@@ -318,6 +320,7 @@ For a full goal-support cycle, produce or update these artifacts:
 - `current_stage`: current stage, assessment basis, confidence, strengths, weaknesses, and missing prerequisites.
 - `target_milestones`: current stage, destination, milestones, dependencies, risks, and checkpoints.
 - `stage_plan`: stage path, current-stage actions, observable outputs, resources, and review rule.
+- `support_options`: apps, tools, venues, communities, coaches, reminders, or professional support matched to `support_preferences` and current-stage friction.
 - `coaching_result`: user output, feedback, observed strength, observed weakness, state update, and next action.
 - `review_result`: stage output reviewed, progress judgment, decision, adjustment, and next review date.
 - `visual_companion`: scene-fit image, diagram, or render brief attached to each key milestone, stage-plan, or review artifact.
