@@ -12,31 +12,48 @@ Each item is scored:
 Pass threshold:
 
 - Each critical item must be at least 2.
-- Total score should be at least 22 out of 27 for a strong pass.
+- Total score should be at least 26 out of 33 for a strong pass.
 - If any critical item is 0, the scenario fails regardless of total score.
 
 ## Criteria
 
 | Key | Criterion | What Good Looks Like |
 | --- | --- | --- |
-| goal_contract | Goal contract | The learner's wish is converted into a concrete target with OKR breakdown, success evidence, time horizon, scope, constraints, and guidance style. |
-| current_position | Current position | The agent identifies baseline level using appropriate evidence and states confidence. |
-| gap_diagnosis | Gap diagnosis | The agent explains the gap between current state and target in actionable terms. |
-| learning_map | Learning map | The route contains start, destination, milestones, dependencies, risks, and checkpoints. |
+| goal_contract | Goal contract | The user's vision is converted into a concrete target with success signals, observable outputs, time horizon, scope, constraints, and guidance style. |
+| current_stage | Current stage | The agent identifies the current position using the right lens for the goal category and states confidence. |
+| distance_to_target | Distance to target | The agent explains the gap between current stage and target in actionable terms. |
+| target_milestones | Target milestones | The route contains current stage, destination, milestones, dependencies, risks, and checkpoints. |
 | stage_path | Stage path | The plan has stage logic, not just daily tasks. |
-| learning_plan | Learning plan | The first 7 days are concrete, realistic, and evidence-producing. |
-| tutoring_feedback | Tutoring feedback | The agent supports execution and asks for learner output, then gives useful feedback. |
+| stage_plan | Stage plan | The first 7 days are concrete, realistic, and output-producing. |
+| coaching_feedback | Coaching feedback | The agent supports execution and asks for user output, then gives useful feedback. |
 | review_adjustment | Review adjustment | The agent defines when and how to reassess, plus what triggers plan changes. |
-| learner_state_memory | Learner state memory | The agent updates learner preferences, evidence, weaknesses, and plan state. |
+| visual_companion | Visual companion | Key artifacts include a scene-fit image, diagram, or render brief in the same reply. |
+| stage_handoff | Stage handoff | After key artifacts, the agent asks for additions or corrections and previews the next phase naturally. |
+| user_state_memory | User state memory | The agent updates user preferences, evidence, weaknesses, and plan state. |
+
+## Portfolio Extension Checks
+
+Use these checks when the scenario is life-level or multi-goal:
+
+- `growth_profile`: The agent captures life north star, values, desired identity, life domains, and recurring patterns before reducing the user to a single plan.
+- `goal_portfolio`: The agent separates main, maintenance, exploration, and paused goals.
+- `active_cycle_focus`: When the user names a current main line, the agent protects that focus and treats side goals as guardrails or bounded explorations.
+- `priority_principles`: The agent asks for or reflects the user's own tradeoff rules before resolving goal conflicts.
+- `growth_log`: Daily, weekly, or monthly review captures action evidence plus health, emotion, relationships, and inner growth when relevant.
+- `question_cadence`: The agent asks no more than 3 questions at once, and prefers 1 focused question for 1-on-1 partner or mentor style.
 
 ## Common Failure Signals
 
 - The agent jumps to resources before clarifying the goal.
-- The agent skips OKR breakdown after the goal is clear.
-- The plan is generic and could fit any learner.
-- The agent treats self-rating as proven baseline.
-- The learning map is just a topic list.
+- The agent skips success signals after the goal is clear.
+- The plan is generic and could fit anyone.
+- The agent treats self-rating as proven current stage.
+- The agent treats every current position as current level.
+- The milestone route is just a topic list.
 - Daily tasks are consumption-only.
 - There is no review rule.
-- The learner's guidance style is ignored.
+- Key artifacts are delivered as text only.
+- The agent waits for confirmation before producing the first visual companion.
+- The phase ends without a natural correction question and next-phase preview.
+- The user's guidance style is ignored.
 - The agent overclaims expertise in high-stakes domains.

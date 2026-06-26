@@ -1,8 +1,8 @@
-# Loop Learning OS Agent Pack Implementation Plan
+﻿# Lifelong Growth OS OS Agent Pack Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Build a platform-neutral Agent Pack for Loop Learning OS with scenario-based tests and a self-test report.
+**Goal:** Build a platform-neutral Agent Pack for Lifelong Growth OS OS with scenario-based tests and a self-test report.
 
 **Architecture:** Use `AGENT.md` as the orchestrator, `skills/` as phase protocols, `schemas/` as state templates, and `tests/` as structural plus scenario validation. Keep the first version Markdown-first so it can later be embedded into Codex, Claude Code, ChatGPT, Coze, or an app wrapper.
 
@@ -17,7 +17,7 @@
 
 - [x] **Step 1: Write failing validation**
 
-Create a script that checks required files, routing markers, visual rules, scoring rubric terms, and eight scenario categories.
+Create a script that checks required files, routing markers, visual rules, scoring rubric terms, and ten scenario categories.
 
 - [x] **Step 2: Run validation to verify failure**
 
@@ -39,15 +39,15 @@ Expected: FAIL because pack files are missing.
 
 - [x] **Step 1: Implement orchestrator**
 
-Write the main Learning OS Orchestrator with loop, state artifacts, category routing, guidance styles, and skill routing.
+Write the main Lifelong Growth OS Orchestrator with loop, state artifacts, category routing, guidance styles, and skill routing.
 
 - [x] **Step 2: Implement skills**
 
-Write one focused skill per loop phase: goal clarification, level assessment, learning map, path planning, resource curation, tutoring coach, review adjustment, visual rendering.
+Write one focused skill per loop phase: goal clarification, current-stage assessment, milestone route, stage goal decomposition, resource curation, personalized coaching, review adjustment, visual rendering.
 
 - [x] **Step 3: Implement schemas**
 
-Write learner profile, goal contract, learning state, and learning plan templates.
+Write user profile, goal contract, goal state, and stage plan templates.
 
 ### Task 3: Create Scenario Test Suite
 
@@ -58,9 +58,9 @@ Write learner profile, goal contract, learning state, and learning plan template
 
 - [x] **Step 1: Write evaluation rubric**
 
-Define pass criteria for goal contract, current position, gap diagnosis, learning map, stage path, learning plan, tutoring feedback, review adjustment, and learner state memory.
+Define pass criteria for goal contract, current position, gap diagnosis, milestone route, stage path, stage plan, tutoring feedback, review adjustment, and user state memory.
 
-- [x] **Step 2: Write eight scenario tests**
+- [x] **Step 2: Write ten scenario tests**
 
 Create one scenario per target category.
 
@@ -102,7 +102,7 @@ Run the same validation command after fixes.
 
 - [x] **Step 1: Write failing harness test**
 
-Create a test that requires the runner, eight transcripts, a JSON manifest, and a human-readable report.
+Create a test that requires the runner, ten transcripts, a JSON manifest, and a human-readable report.
 
 - [x] **Step 2: Run test to verify it fails**
 
@@ -116,7 +116,7 @@ Expected: FAIL because the runner and generated outputs do not exist yet.
 
 - [x] **Step 3: Implement deterministic runner**
 
-Create a local runner that reads the eight scenario files and generates standard simulated transcripts covering the full learning loop.
+Create a local runner that reads the ten scenario files and generates standard simulated transcripts covering the full goal-support loop.
 
 - [x] **Step 4: Run harness test to verify it passes**
 
@@ -126,4 +126,4 @@ Run:
 powershell -ExecutionPolicy Bypass -File .\tests\test-transcript-harness.ps1
 ```
 
-Expected: PASS with eight generated transcripts.
+Expected: PASS with ten generated transcripts.

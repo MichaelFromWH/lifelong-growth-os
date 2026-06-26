@@ -1,4 +1,4 @@
-# Scenario 07: Life Practice
+﻿# Scenario 07: Life Practice
 
 category: life_practice
 
@@ -13,11 +13,11 @@ A busy office worker wants to build a sustainable fitness routine. They have bac
 ## Expected Skill Chain
 
 1. `goal-clarification`
-2. `level-assessment`
-3. `learning-map`
-4. `path-planning`
+2. `current-stage-assessment`
+3. `target-milestones`
+4. `stage-goal-decomposition`
 5. `resource-curation`
-6. `tutoring-coach`
+6. `personalized-coaching`
 7. `review-adjustment`
 
 ## Acceptance Focus
@@ -32,4 +32,5 @@ A busy office worker wants to build a sustainable fitness routine. They have bac
 - Gives intense workout plan.
 - Ignores back discomfort.
 - No habit friction diagnosis.
+
 

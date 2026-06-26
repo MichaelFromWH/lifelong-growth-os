@@ -1,33 +1,33 @@
-# Schema: Learning State
+# Schema: Goal State
 
-Use this schema after assessment, tutoring sessions, and reviews.
+Use this schema after assessment, coaching sessions, and reviews.
 
 ```yaml
-learning_state:
+goal_state:
   goal_id: ""
-  learning_stage: "intake"
+  goal_stage: "intake"
   last_stage_transition:
     from: ""
     to: "intake"
     trigger: ""
     tool_or_skill: ""
-    evidence: ""
+    assessment_basis: ""
     reason: ""
-  current_level:
+  current_stage:
     label: ""
     confidence: "low"
-    evidence:
+    assessment_basis:
       - ""
   strengths:
     - ""
   weaknesses:
     - ""
-  gap_diagnosis:
+  distance_to_target:
     - gap: ""
       impact: ""
-      evidence: ""
+      basis: ""
       priority: ""
-  learning_map:
+  target_milestones:
     current_node: ""
     target_node: ""
     milestones:
@@ -39,7 +39,7 @@ learning_state:
   evidence_log:
     - date: ""
       activity: ""
-      learner_output: ""
+      user_output: ""
       observation: ""
       state_change: ""
   stage_transition_log:
@@ -48,7 +48,7 @@ learning_state:
       to: ""
       trigger: ""
       tool_or_skill: ""
-      evidence: ""
+      assessment_basis: ""
       reason: ""
   updated_at: ""
 ```

@@ -1,9 +1,9 @@
-# Schema: Learning Plan
+# Schema: Stage Plan
 
-Use this schema after path planning and review adjustment.
+Use this schema after stage goal decomposition and review adjustment.
 
 ```yaml
-learning_plan:
+stage_plan:
   goal_id: ""
   current_stage: ""
   stage_path:
@@ -12,10 +12,10 @@ learning_plan:
       graduation_condition: ""
   seven_day_plan:
     - day: 1
-      key_result: "KR1"
+      success_signal: "SS1"
       focus: ""
       task: ""
-      expected_evidence: ""
+      observable_output: ""
       coach_check: ""
   resources:
     - title: ""

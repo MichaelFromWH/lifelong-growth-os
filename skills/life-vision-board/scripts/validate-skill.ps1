@@ -37,60 +37,64 @@ Require-File "references/state-schemas.md"
 Require-File "references/evaluation-rubric.md"
 
 Require-Text "SKILL.md" @(
-  "name: personalized-lifelong-learning",
-  "Loop Learning OS",
+  "name: life-vision-board",
+  "Lifelong Growth OS",
   "FLOW_GUARD",
-  "learning_stage",
+  "goal_stage",
   "stage_transition",
   "STAGE_TRANSITION_RULES",
   "USER_FACING_LANGUAGE",
   "INTERNAL_LABELS_HIDDEN",
-  "OPENING_PROCESS_PREVIEW",
+  "KICKOFF_ORIENTATION",
   "STAGE_PURPOSE_BRIEF",
-  "OKR_DECOMPOSITION",
+  "STAGE_HANDOFF_CONFIRMATION",
+  "GOAL_DECOMPOSITION",
   "KEY_RESULTS_TO_ACTIONS",
   "MISSING_ARTIFACTS",
   "NO_PATH_WITHOUT_ASSESSMENT",
-  "CURRENT_POSITION_REQUIRED",
-  "GAP_DIAGNOSIS_REQUIRED",
+  "CURRENT_STAGE_REQUIRED",
+  "MILESTONES_REQUIRED",
+  "VISUAL_COMPANION_REQUIRED",
+  "HANDOFF_REQUIRED",
   "goal contract",
-  "level assessment",
-  "learning map",
-  "path planning",
-  "tutoring",
-  "review adjustment"
+  "current stage assessment",
+  "target milestones",
+  "stage goal decomposition",
+  "personalized coaching",
+  "review adjustment",
+  "visual_companion",
+  "current position, not always their current level"
 )
 
 Require-Text "references/orchestrator.md" @(
   "Core Loop",
-  "Learner-Facing Language",
+  "User-Facing Language",
   "Goal Contract",
-  "OKR Breakdown",
-  "Level Assessment",
-  "Learning Map",
+  "Goal Decomposition",
+  "Current Stage Assessment",
+  "Target Milestones",
   "Review Adjustment"
 )
 
 Require-Text "references/state-schemas.md" @(
-  "learner_profile",
+  "user_profile",
   "goal_contract",
-  "learning_stage",
+  "goal_stage",
   "stage_transition_log",
-  "learning_state",
-  "learning_plan"
+  "goal_state",
+  "stage_plan"
 )
 
 Require-Text "references/evaluation-rubric.md" @(
-  "OKR breakdown"
+  "success signals"
 )
 
 if ($failures.Count -gt 0) {
-  Write-Host "PERSONALIZED LIFELONG LEARNING SKILL VALIDATION FAILED" -ForegroundColor Red
+  Write-Host "LIFELONG GROWTH OS SKILL VALIDATION FAILED" -ForegroundColor Red
   foreach ($failure in $failures) {
     Write-Host "- $failure"
   }
   exit 1
 }
 
-Write-Host "PERSONALIZED LIFELONG LEARNING SKILL VALIDATION PASSED" -ForegroundColor Green
-
+Write-Host "LIFELONG GROWTH OS SKILL VALIDATION PASSED" -ForegroundColor Green

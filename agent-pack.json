@@ -1,16 +1,40 @@
-﻿{
-  "name": "personalized-lifelong-learning",
-  "displayName": "Personalized Lifelong Learning",
-  "version": "0.1.0",
-  "description": "A platform-neutral Agent Pack for running a dynamic personalized learning loop across general-purpose AI agents.",
-  "method": "Loop Learning OS",
+{
+  "name": "life-vision-board",
+  "displayName": "终身成长OS",
+  "productName": "Lifelong Growth OS",
+  "version": "0.2.0",
+  "description": "A platform-neutral Agent Pack for helping people clarify vague visions, manage a multi-goal growth portfolio, locate their current position, define milestones, execute the next stage, and review progress.",
+  "method": "Lifelong Growth OS",
   "entrypoints": {
     "genericAgent": "AGENT.md",
-    "codexSkill": "skills/personalized-lifelong-learning/SKILL.md"
+    "codexSkill": "skills/life-vision-board/SKILL.md"
   },
-  "skillPath": "skills/personalized-lifelong-learning",
+  "skillPath": "skills/life-vision-board",
+  "productForms": {
+    "agentPlatformPlugin": {
+      "description": "Package Life Vision Board OS into third-party agent platforms.",
+      "targets": [
+        "Codex",
+        "Claude Code",
+        "Coze",
+        "Dify-style workflows",
+        "custom open-source agent runtimes"
+      ]
+    },
+    "standaloneProduct": {
+      "description": "Use the same OS inside a persistent Web/App Life Portfolio Dashboard.",
+      "coreSurfaces": [
+        "Life Portfolio Dashboard",
+        "Goal detail page",
+        "Daily or weekly focus view",
+        "Review dashboard",
+        "Visual board"
+      ]
+    }
+  },
   "supports": [
     "Codex",
+    "Claude Code",
     "Claude",
     "ChatGPT",
     "Coze",
@@ -18,24 +42,28 @@
     "custom open-source model agents"
   ],
   "capabilities": [
-    "goal clarification",
-    "level assessment",
-    "gap diagnosis",
-    "learning map",
-    "path planning",
-    "resource curation",
-    "tutoring",
-    "review adjustment",
-    "learner state memory",
+    "vision clarification",
+    "current position assessment",
+    "distance diagnosis",
+    "target milestones",
+    "stage goal decomposition",
+    "support resource curation",
+    "personalized coaching",
+    "stage review adjustment",
+    "user state memory",
+    "life-level growth profile",
+    "multi-goal portfolio",
+    "daily weekly monthly reflection logs",
     "visual render brief generation"
   ],
+  "dataArchitecture": {
+    "sourcePackage": "Reusable protocols, schemas, skills, tests, and docs live in this repository.",
+    "privateUserData": "Private growth data should live outside source control or under a gitignored data/users/<user-id>/ workspace."
+  },
   "tests": {
     "structural": "tests/validate-pack.ps1",
     "transcriptHarness": "tests/test-transcript-harness.ps1",
-    "codexSkill": "skills/personalized-lifelong-learning/scripts/validate-skill.ps1"
+    "codexSkill": "skills/life-vision-board/scripts/validate-skill.ps1"
   },
   "license": "MIT"
 }
-
-
-

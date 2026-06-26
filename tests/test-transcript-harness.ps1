@@ -49,8 +49,8 @@ Assert-PathExists "tests/transcript-harness-report.md" "file" | Out-Null
 $transcriptDir = Join-Path $Root "tests/transcripts"
 if (Test-Path -LiteralPath $transcriptDir -PathType Container) {
   $transcripts = Get-ChildItem -LiteralPath $transcriptDir -Filter "*.transcript.md" | Sort-Object Name
-  if ($transcripts.Count -ne 8) {
-    Add-Failure "Expected 8 transcript files, found $($transcripts.Count)"
+  if ($transcripts.Count -lt 10) {
+    Add-Failure "Expected at least 10 transcript files, found $($transcripts.Count)"
   }
 
   foreach ($transcript in $transcripts) {
@@ -59,28 +59,28 @@ if (Test-Path -LiteralPath $transcriptDir -PathType Container) {
       "## Simulated Dialogue",
       "Process Preview",
       "Stage Purpose",
-      "Learning Goal",
-      "OKR Breakdown",
-      "Key Results",
+      "Goal Contract",
+      "Goal Decomposition",
+      "Success Signals",
       "Executable Actions",
-      "Current Position",
-      "Gap To Target",
-      "Learning Map",
-      "7-Day Plan",
-      "Tutoring Session",
+      "Current Stage",
+      "Distance To Target",
+      "Milestone Route",
+      "7-Day Stage Plan",
+      "Coaching Session",
       "Review Adjustment",
-      "Learner State Update",
+      "User State Update",
       "Score:"
     )
 
     $content = Get-Content -LiteralPath $transcript.FullName -Raw -Encoding UTF8
     $disallowedUserFacingTerms = @(
       "Flow Guard",
-      "Learning Stage",
+      "Goal Stage",
       "Stage Transition",
       "Current Required Stage",
       "Next Allowed Stage",
-      "learning_stage",
+      "goal_stage",
       "stage_transition",
       "action_coach",
       "high_standard_mentor",
@@ -100,18 +100,18 @@ if (Test-Path -LiteralPath $transcriptDir -PathType Container) {
 Assert-FileContains "tests/transcript-harness-report.md" @(
   "Transcript Harness Report",
   "Overall result: PASS",
-  "8/8 scenarios passed",
+  "scenarios passed",
   "Average score:"
 )
 
 if (Test-Path -LiteralPath (Join-Path $Root "tests/transcripts/manifest.json") -PathType Leaf) {
   try {
     $manifest = Get-Content -LiteralPath (Join-Path $Root "tests/transcripts/manifest.json") -Raw -Encoding UTF8 | ConvertFrom-Json
-    if ($manifest.scenario_count -ne 8) {
-      Add-Failure "Manifest scenario_count expected 8, found $($manifest.scenario_count)"
+    if ($manifest.scenario_count -lt 10) {
+      Add-Failure "Manifest scenario_count expected at least 10, found $($manifest.scenario_count)"
     }
-    if ($manifest.passed_count -ne 8) {
-      Add-Failure "Manifest passed_count expected 8, found $($manifest.passed_count)"
+    if ($manifest.passed_count -ne $manifest.scenario_count) {
+      Add-Failure "Manifest passed_count expected $($manifest.scenario_count), found $($manifest.passed_count)"
     }
     if ($manifest.overall_result -ne "pass") {
       Add-Failure "Manifest overall_result expected pass, found $($manifest.overall_result)"

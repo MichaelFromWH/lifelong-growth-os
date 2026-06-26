@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-SOURCE="$REPO_ROOT/skills/personalized-lifelong-learning"
+SOURCE="$REPO_ROOT/skills/life-vision-board"
 
 if [[ ! -d "$SOURCE" ]]; then
   echo "Skill source not found: $SOURCE" >&2
@@ -11,7 +11,7 @@ if [[ ! -d "$SOURCE" ]]; then
 fi
 
 DEST_ROOT="${1:-${CODEX_HOME:-$HOME/.codex}/skills}"
-DEST="$DEST_ROOT/personalized-lifelong-learning"
+DEST="$DEST_ROOT/life-vision-board"
 
 if [[ -e "$DEST" ]]; then
   echo "Destination already exists: $DEST" >&2
@@ -22,7 +22,7 @@ fi
 mkdir -p "$DEST_ROOT"
 cp -R "$SOURCE" "$DEST"
 
-echo "Installed personalized-lifelong-learning skill to: $DEST"
+echo "Installed life-vision-board skill to: $DEST"
 echo "Restart Codex to pick up new skills."
 
 

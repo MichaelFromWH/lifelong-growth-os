@@ -1,12 +1,12 @@
 ﻿# Transcript Harness Report
 
-Generated at: 2026-06-17T18:16:18
+Generated at: 2026-06-26T11:41:42
 
 Overall result: PASS
 
-Summary: 8/8 scenarios passed
+Summary: 12/12 scenarios passed
 
-Average score: 25.2/27
+Average score: 25/27
 
 ## Results
 
@@ -20,10 +20,14 @@ Average score: 25.2/27
 | 06-career-growth-ai-product-manager.md | career_growth | 26/27 | PASS | tests/transcripts/06-career-growth-ai-product-manager.transcript.md |
 | 07-life-practice-fitness.md | life_practice | 24/27 | PASS | tests/transcripts/07-life-practice-fitness.transcript.md |
 | 08-research-exploration-industry.md | research_exploration | 25/27 | PASS | tests/transcripts/08-research-exploration-industry.transcript.md |
+| 09-strategy-decision-opc.md | strategy_decision | 25/27 | PASS | tests/transcripts/09-strategy-decision-opc.transcript.md |
+| 10-identity-growth-creator.md | identity_growth | 24/27 | PASS | tests/transcripts/10-identity-growth-creator.transcript.md |
+| 11-lifelong-multi-goal-portfolio.md | identity_growth | 24/27 | PASS | tests/transcripts/11-lifelong-multi-goal-portfolio.transcript.md |
+| 12-mainline-ai-growth-partner-with-side-goals.md | strategy_decision | 25/27 | PASS | tests/transcripts/12-mainline-ai-growth-partner-with-side-goals.transcript.md |
 
 ## Interpretation
 
-This harness creates deterministic gold-standard transcripts for the eight learning goal categories. It verifies that each scenario can travel through the full Loop Learning OS path: goal contract, current position, gap diagnosis, learning map, 7-day plan, tutoring session, review adjustment, and learner state update.
+This harness creates deterministic gold-standard transcripts for the goal categories. It verifies that each scenario can travel through the full Lifelong Growth OS OS path: goal contract, current stage, distance to target, milestone route, 7-day stage plan, coaching session, review adjustment, and user state update.
 
 ## Next Upgrade
 

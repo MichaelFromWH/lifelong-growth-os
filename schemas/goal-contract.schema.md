@@ -7,20 +7,15 @@ goal_contract:
   goal_id: ""
   category_primary: ""
   category_secondary: ""
-  original_wish: ""
+  original_vision: ""
   clarified_goal: ""
-  okr:
-    objective: ""
-    key_results:
-      - kr_id: "KR1"
-        description: ""
-        target_cycle: "7 days"
-        success_signal: ""
-        evidence:
-          - ""
-  target_level: ""
-  success_evidence:
-    - ""
+  objective: ""
+  success_signals:
+    - signal_id: "SS1"
+      description: ""
+      target_cycle: "7 days"
+      observable_output:
+        - ""
   time_horizon:
     start_date: ""
     target_date: ""

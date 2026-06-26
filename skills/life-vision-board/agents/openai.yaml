@@ -1,0 +1,9 @@
+﻿interface:
+  display_name: "终身成长OS"
+  short_description: "Goal-support loop for turning visions into staged execution"
+  default_prompt: "Use $life-vision-board to turn my vision or goal into a staged loop with clarification, current-stage assessment, milestones, actions, coaching, and review."
+policy:
+  allow_implicit_invocation: true
+
+
+

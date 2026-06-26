@@ -6,7 +6,7 @@
 $ErrorActionPreference = "Stop"
 
 $RepoRoot = Split-Path -Parent $PSScriptRoot
-$Source = Join-Path $RepoRoot "skills/personalized-lifelong-learning"
+$Source = Join-Path $RepoRoot "skills/life-vision-board"
 
 if (-not (Test-Path -LiteralPath $Source -PathType Container)) {
   throw "Skill source not found: $Source"
@@ -17,7 +17,7 @@ if (-not $DestinationRoot) {
   $DestinationRoot = Join-Path $codexHome "skills"
 }
 
-$Destination = Join-Path $DestinationRoot "personalized-lifelong-learning"
+$Destination = Join-Path $DestinationRoot "life-vision-board"
 
 if (Test-Path -LiteralPath $Destination) {
   if (-not $Force) {
@@ -29,7 +29,7 @@ if (Test-Path -LiteralPath $Destination) {
 New-Item -ItemType Directory -Force -Path $DestinationRoot | Out-Null
 Copy-Item -LiteralPath $Source -Destination $Destination -Recurse
 
-Write-Host "Installed personalized-lifelong-learning skill to: $Destination"
+Write-Host "Installed life-vision-board skill to: $Destination"
 Write-Host "Restart Codex to pick up new skills."
 
 
