@@ -1,6 +1,6 @@
-# Install Life Vision Board
+# Install 终身成长OS / Lifelong Growth OS
 
-Life Vision Board can be used in two ways:
+终身成长OS can be used in two ways:
 
 - As a Codex Skill via `skills/life-vision-board`.
 - As a Generic Agent Pack by loading `AGENT.md` and related references into any agent runtime.

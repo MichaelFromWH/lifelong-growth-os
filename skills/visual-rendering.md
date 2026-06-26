@@ -1,4 +1,4 @@
-# Skill: Visual Rendering
+﻿# Skill: Visual Rendering
 
 Use this skill whenever a key Life Vision Board artifact needs a scene-fit visual companion.
 
@@ -43,7 +43,7 @@ Turn milestone routes, stage plans, review summaries, and goal contract posters 
 ## Image Prompt Template
 
 ```text
-Create a modern, clean, high-clarity Life Vision Board visual.
+Create a modern, clean, high-clarity Lifelong Growth OS visual.
 
 Subject: [milestone route / 7-day stage plan / review dashboard / goal contract]
 User goal: [goal]

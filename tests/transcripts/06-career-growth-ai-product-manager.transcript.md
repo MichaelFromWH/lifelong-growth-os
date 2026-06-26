@@ -10,7 +10,7 @@
 
 "我想转 AI 产品经理，但我不知道自己到底缺什么，也不知道该怎么证明自己有这个能力。"
 
-### Turn 2 - Life Vision Board Orchestrator: Process Preview
+### Turn 2 - Lifelong Growth OS Orchestrator: Process Preview
 
 Process Preview:
 - First we will clarify what the user really wants.
@@ -22,7 +22,7 @@ Stage Purpose:
 
 I will not jump into resources or a full path yet. First I need to make the destination clear enough that the plan can be personal instead of generic.
 
-### Turn 3 - Life Vision Board Orchestrator: Goal Contract
+### Turn 3 - Lifelong Growth OS Orchestrator: Goal Contract
 
 Stage Purpose:
 - Now we are making the goal concrete, so the user knows what "done" will look like.
@@ -41,11 +41,12 @@ Goal Decomposition:
   - SS2: complete the first improvement or validation cycle and submit evidence.
   - SS3: review progress and decide whether to continue, adjust, complete, or define the next version.
 - Executable Actions:
-  - Share prior context or one recent attempt.
-  - Complete a small diagnostic task.
-  - Submit the first output for feedback.
+- Share prior context or one recent attempt.
+- Complete a small diagnostic task.
+- Submit the first output for feedback.
 
-### Turn 4 - Life Vision Board Orchestrator: Current Stage
+
+### Turn 4 - Lifelong Growth OS Orchestrator: Current Stage
 
 Stage Purpose:
 - This step is not a test; it tells us where the route should start.
@@ -56,7 +57,7 @@ Current Stage:
 - Basis requested: prior context, one recent attempt, artifact, score, routine record, decision context, or a small diagnostic task.
 - Confidence starts as medium only after basis is provided.
 
-### Turn 5 - Life Vision Board Orchestrator: Distance To Target
+### Turn 5 - Lifelong Growth OS Orchestrator: Distance To Target
 
 Stage Purpose:
 - Now we compare the target with the current stage, so the first week focuses on the gap that matters most.
@@ -66,7 +67,7 @@ Distance To Target:
 - Separate knowledge gaps, skill gaps, validation gaps, motivation constraints, environment constraints, and decision uncertainty.
 - Keep the highest-impact gap visible for the first 7 days.
 
-### Turn 6 - Life Vision Board Orchestrator: Milestone Route
+### Turn 6 - Lifelong Growth OS Orchestrator: Milestone Route
 
 Stage Purpose:
 - This step turns the distance into a route, so the user can see the journey instead of a pile of tasks.
@@ -80,7 +81,7 @@ Milestone Route:
 
 Category-specific route hint: Use competency map, proof-of-work artifacts, and role-specific cases.
 
-### Turn 7 - Life Vision Board Orchestrator: 7-Day Stage Plan
+### Turn 7 - Lifelong Growth OS Orchestrator: 7-Day Stage Plan
 
 Stage Purpose:
 - Now we convert the route and Success Signals into actions the user can actually do this week.
@@ -94,7 +95,7 @@ Stage Purpose:
 - Day 6: SS3 complete a realistic mini-task.
 - Day 7: SS3 review evidence and adjust the route.
 
-### Turn 8 - Life Vision Board Orchestrator: Coaching Session
+### Turn 8 - Lifelong Growth OS Orchestrator: Coaching Session
 
 Stage Purpose:
 - This step is for doing the work together, collecting evidence, and correcting one concrete weakness.
@@ -105,7 +106,7 @@ Coaching Session:
 - Give one strength, one fix, and one next action.
 - Update evidence instead of only giving encouragement.
 
-### Turn 9 - Life Vision Board Orchestrator: Review Adjustment
+### Turn 9 - Lifelong Growth OS Orchestrator: Review Adjustment
 
 Stage Purpose:
 - This step checks whether the evidence says to continue, lighten, intensify, complete, or change the route.
@@ -115,7 +116,7 @@ Review Adjustment:
 - Decide whether to continue, reduce load, raise difficulty, change guidance preference, complete, or define the next version.
 - Create the next 7-day plan only after the review.
 
-### Turn 10 - Life Vision Board Orchestrator: User State Update
+### Turn 10 - Lifelong Growth OS Orchestrator: User State Update
 
 User State Update:
 - Store the chosen guidance preference.

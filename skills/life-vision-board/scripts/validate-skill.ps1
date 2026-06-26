@@ -1,4 +1,4 @@
-param(
+﻿param(
   [string]$SkillRoot = (Split-Path -Parent $PSScriptRoot)
 )
 
@@ -38,7 +38,7 @@ Require-File "references/evaluation-rubric.md"
 
 Require-Text "SKILL.md" @(
   "name: life-vision-board",
-  "Life Vision Board",
+  "Lifelong Growth OS",
   "FLOW_GUARD",
   "goal_stage",
   "stage_transition",
@@ -90,11 +90,11 @@ Require-Text "references/evaluation-rubric.md" @(
 )
 
 if ($failures.Count -gt 0) {
-  Write-Host "LIFE VISION BOARD SKILL VALIDATION FAILED" -ForegroundColor Red
+  Write-Host "LIFELONG GROWTH OS SKILL VALIDATION FAILED" -ForegroundColor Red
   foreach ($failure in $failures) {
     Write-Host "- $failure"
   }
   exit 1
 }
 
-Write-Host "LIFE VISION BOARD SKILL VALIDATION PASSED" -ForegroundColor Green
+Write-Host "LIFELONG GROWTH OS SKILL VALIDATION PASSED" -ForegroundColor Green

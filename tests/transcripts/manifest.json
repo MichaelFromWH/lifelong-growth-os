@@ -1,8 +1,8 @@
 ﻿{
-    "generated_at":  "2026-06-17T22:01:58",
-    "scenario_count":  10,
-    "passed_count":  10,
-    "average_score":  25.1,
+    "generated_at":  "2026-06-26T11:41:42",
+    "scenario_count":  12,
+    "passed_count":  12,
+    "average_score":  25,
     "overall_result":  "pass",
     "results":  [
                     {
@@ -74,6 +74,20 @@
                         "score":  24,
                         "passed":  true,
                         "transcript":  "tests/transcripts/10-identity-growth-creator.transcript.md"
+                    },
+                    {
+                        "scenario":  "11-lifelong-multi-goal-portfolio.md",
+                        "category":  "identity_growth",
+                        "score":  24,
+                        "passed":  true,
+                        "transcript":  "tests/transcripts/11-lifelong-multi-goal-portfolio.transcript.md"
+                    },
+                    {
+                        "scenario":  "12-mainline-ai-growth-partner-with-side-goals.md",
+                        "category":  "strategy_decision",
+                        "score":  25,
+                        "passed":  true,
+                        "transcript":  "tests/transcripts/12-mainline-ai-growth-partner-with-side-goals.transcript.md"
                     }
                 ]
 }

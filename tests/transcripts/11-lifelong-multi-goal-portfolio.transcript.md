@@ -1,14 +1,14 @@
-﻿# Transcript: 04-exam-certification-ielts.md
+﻿# Transcript: 11-lifelong-multi-goal-portfolio.md
 
-- Category: exam_certification
+- Category: identity_growth
 - Result: PASS
-- Score: 25/27
+- Score: 24/27
 
 ## Simulated Dialogue
 
 ### Turn 1 - User
 
-"我三个月后想考雅思，总分目标 7，但现在不知道自己差在哪里。"
+"My goals are not only career goals. I also want long-term physical health, emotional stability, more kindness, better family relationships, more good memories, and a life where I become a better version of myself and leave traces that make the world better."
 
 ### Turn 2 - Lifelong Growth OS Orchestrator: Process Preview
 
@@ -28,7 +28,7 @@ Stage Purpose:
 - Now we are making the goal concrete, so the user knows what "done" will look like.
 
 Goal Contract:
-- Category: exam_certification
+- Category: identity_growth
 - Clarified goal: convert the user's vision into a concrete target with observable success signals.
 - Success signals: the user produces or records real output that proves progress.
 - Time horizon: first review after 7 days unless the scenario states a stricter deadline.
@@ -45,6 +45,24 @@ Goal Decomposition:
 - Complete a small diagnostic task.
 - Submit the first output for feedback.
 
+### Turn 3A - Lifelong Growth OS Orchestrator: Life-Level Profile And Goal Portfolio
+
+Stage Purpose:
+- Because the user named several life goals, we should not force everything into one goal contract yet.
+
+Growth Profile:
+- Capture the life north star in the user's own words.
+- Identify life domains such as career, health, emotional steadiness, family relationships, and contribution.
+- Mark current details as user-confirmed, provisional, or needing future evidence.
+
+Goal Portfolio:
+- Main goal: choose only after priority principles and current constraints are clearer.
+- Maintenance goals: protect health, family relationships, and emotional steadiness from being sacrificed by the main goal.
+- Exploration goals: keep uncertain long-term directions visible without overcommitting.
+- Paused goals: preserve real but inactive goals without turning them into silent guilt.
+
+Priority Principle Prompt:
+- Before resolving conflicts, ask what should win when goals compete for time, energy, money, attention, or family stability.
 
 ### Turn 4 - Lifelong Growth OS Orchestrator: Current Stage
 
@@ -79,7 +97,7 @@ Milestone Route:
 - Risks: likely blockers from the scenario.
 - Checkpoints: observable review moments.
 
-Category-specific route hint: Use score baseline, section gap diagnosis, mock practice, and review cadence.
+Category-specific route hint: Use values, patterns, support context, and observable behavior shifts.
 
 ### Turn 7 - Lifelong Growth OS Orchestrator: 7-Day Stage Plan
 
@@ -125,18 +143,22 @@ User State Update:
 
 ## Scenario Acceptance Focus
 
-- Ask for current mock scores by section and target school requirement.
-- Use exam-specific baseline and score gap.
-- Plan by listening, reading, writing, speaking, and test strategy.
-- Include weekly mocks or section checks.
+- Treat the input as life-level growth architecture, not a single career goal.
+- Create or update `growth_profile` before narrowing to one goal.
+- Create a `goal_portfolio` with main, maintenance, exploration, and paused roles.
+- Keep career as one possible main lever without reducing the user's life to career.
+- Include health, emotional steadiness, family harmony, good memories, and contribution as first-class domains.
+- Ask for priority principles before resolving conflicts between goals.
+- Avoid producing a detailed plan until the current state and active-cycle priority are clear.
 
 ## Scenario Failure Signals
 
-- Gives generic English plan.
-- Ignores score breakdown.
-- No mock test or review cadence.
+- Forces all goals into a single 7-day task list.
+- Treats career as the only real goal.
+- Ignores health, emotional, family, and contribution domains.
+- Uses old memory as final truth instead of asking what is current.
+- Builds a private-user-specific design that cannot generalize to other users.
 
 ## Harness Score
 
-Score: 25/27
-
+Score: 24/27

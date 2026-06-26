@@ -1,4 +1,4 @@
-param(
+﻿param(
   [string]$Root = ".",
   [string]$OutDir = "tests/transcripts"
 )
@@ -71,6 +71,31 @@ function New-TranscriptContent(
   $safeInitialInput = if ([string]::IsNullOrWhiteSpace($initialInput)) { "(No initial input found.)" } else { $initialInput }
   $hint = Get-CategoryPlanHint $category
   $result = if ($score -ge 22) { "PASS" } else { "FAIL" }
+  $portfolioBlock = ""
+
+  if ($acceptanceFocus -match "growth_profile|goal_portfolio|multi-goal|life-level") {
+    $portfolioBlock = @"
+
+### Turn 3A - Lifelong Growth OS Orchestrator: Life-Level Profile And Goal Portfolio
+
+Stage Purpose:
+- Because the user named several life goals, we should not force everything into one goal contract yet.
+
+Growth Profile:
+- Capture the life north star in the user's own words.
+- Identify life domains such as career, health, emotional steadiness, family relationships, and contribution.
+- Mark current details as user-confirmed, provisional, or needing future evidence.
+
+Goal Portfolio:
+- Main goal: choose only after priority principles and current constraints are clearer.
+- Maintenance goals: protect health, family relationships, and emotional steadiness from being sacrificed by the main goal.
+- Exploration goals: keep uncertain long-term directions visible without overcommitting.
+- Paused goals: preserve real but inactive goals without turning them into silent guilt.
+
+Priority Principle Prompt:
+- Before resolving conflicts, ask what should win when goals compete for time, energy, money, attention, or family stability.
+"@
+  }
 
   return @"
 # Transcript: $scenarioName
@@ -85,7 +110,7 @@ function New-TranscriptContent(
 
 $safeInitialInput
 
-### Turn 2 - Life Vision Board Orchestrator: Process Preview
+### Turn 2 - Lifelong Growth OS Orchestrator: Process Preview
 
 Process Preview:
 - First we will clarify what the user really wants.
@@ -97,7 +122,7 @@ Stage Purpose:
 
 I will not jump into resources or a full path yet. First I need to make the destination clear enough that the plan can be personal instead of generic.
 
-### Turn 3 - Life Vision Board Orchestrator: Goal Contract
+### Turn 3 - Lifelong Growth OS Orchestrator: Goal Contract
 
 Stage Purpose:
 - Now we are making the goal concrete, so the user knows what "done" will look like.
@@ -116,11 +141,12 @@ Goal Decomposition:
   - SS2: complete the first improvement or validation cycle and submit evidence.
   - SS3: review progress and decide whether to continue, adjust, complete, or define the next version.
 - Executable Actions:
-  - Share prior context or one recent attempt.
-  - Complete a small diagnostic task.
-  - Submit the first output for feedback.
+- Share prior context or one recent attempt.
+- Complete a small diagnostic task.
+- Submit the first output for feedback.
+$portfolioBlock
 
-### Turn 4 - Life Vision Board Orchestrator: Current Stage
+### Turn 4 - Lifelong Growth OS Orchestrator: Current Stage
 
 Stage Purpose:
 - This step is not a test; it tells us where the route should start.
@@ -131,7 +157,7 @@ Current Stage:
 - Basis requested: prior context, one recent attempt, artifact, score, routine record, decision context, or a small diagnostic task.
 - Confidence starts as medium only after basis is provided.
 
-### Turn 5 - Life Vision Board Orchestrator: Distance To Target
+### Turn 5 - Lifelong Growth OS Orchestrator: Distance To Target
 
 Stage Purpose:
 - Now we compare the target with the current stage, so the first week focuses on the gap that matters most.
@@ -141,7 +167,7 @@ Distance To Target:
 - Separate knowledge gaps, skill gaps, validation gaps, motivation constraints, environment constraints, and decision uncertainty.
 - Keep the highest-impact gap visible for the first 7 days.
 
-### Turn 6 - Life Vision Board Orchestrator: Milestone Route
+### Turn 6 - Lifelong Growth OS Orchestrator: Milestone Route
 
 Stage Purpose:
 - This step turns the distance into a route, so the user can see the journey instead of a pile of tasks.
@@ -155,7 +181,7 @@ Milestone Route:
 
 Category-specific route hint: $hint
 
-### Turn 7 - Life Vision Board Orchestrator: 7-Day Stage Plan
+### Turn 7 - Lifelong Growth OS Orchestrator: 7-Day Stage Plan
 
 Stage Purpose:
 - Now we convert the route and Success Signals into actions the user can actually do this week.
@@ -169,7 +195,7 @@ Stage Purpose:
 - Day 6: SS3 complete a realistic mini-task.
 - Day 7: SS3 review evidence and adjust the route.
 
-### Turn 8 - Life Vision Board Orchestrator: Coaching Session
+### Turn 8 - Lifelong Growth OS Orchestrator: Coaching Session
 
 Stage Purpose:
 - This step is for doing the work together, collecting evidence, and correcting one concrete weakness.
@@ -180,7 +206,7 @@ Coaching Session:
 - Give one strength, one fix, and one next action.
 - Update evidence instead of only giving encouragement.
 
-### Turn 9 - Life Vision Board Orchestrator: Review Adjustment
+### Turn 9 - Lifelong Growth OS Orchestrator: Review Adjustment
 
 Stage Purpose:
 - This step checks whether the evidence says to continue, lighten, intensify, complete, or change the route.
@@ -190,7 +216,7 @@ Review Adjustment:
 - Decide whether to continue, reduce load, raise difficulty, change guidance preference, complete, or define the next version.
 - Create the next 7-day plan only after the review.
 
-### Turn 10 - Life Vision Board Orchestrator: User State Update
+### Turn 10 - Lifelong Growth OS Orchestrator: User State Update
 
 User State Update:
 - Store the chosen guidance preference.
@@ -303,7 +329,7 @@ $($rows -join "`n")
 
 ## Interpretation
 
-This harness creates deterministic gold-standard transcripts for the goal categories. It verifies that each scenario can travel through the full Life Vision Board OS path: goal contract, current stage, distance to target, milestone route, 7-day stage plan, coaching session, review adjustment, and user state update.
+This harness creates deterministic gold-standard transcripts for the goal categories. It verifies that each scenario can travel through the full Lifelong Growth OS OS path: goal contract, current stage, distance to target, milestone route, 7-day stage plan, coaching session, review adjustment, and user state update.
 
 ## Next Upgrade
 

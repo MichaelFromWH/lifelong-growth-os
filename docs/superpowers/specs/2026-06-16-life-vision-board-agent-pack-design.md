@@ -1,8 +1,8 @@
-﻿# Life Vision Board OS Agent Pack Design
+﻿# Lifelong Growth OS OS Agent Pack Design
 
 ## Background
 
-The product direction is a general-purpose Life Vision Board OS that can run inside existing agent environments before becoming a standalone Web/App product. The first artifact should be a platform-neutral Markdown Agent Pack rather than a full application.
+The product direction is a general-purpose Lifelong Growth OS OS that can run inside existing agent environments before becoming a standalone Web/App product. The first artifact should be a platform-neutral Markdown Agent Pack rather than a full application.
 
 ## Target User
 

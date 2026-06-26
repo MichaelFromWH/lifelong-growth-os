@@ -1,9 +1,10 @@
 {
   "name": "life-vision-board",
-  "displayName": "Life Vision Board",
+  "displayName": "终身成长OS",
+  "productName": "Lifelong Growth OS",
   "version": "0.2.0",
-  "description": "A platform-neutral Agent Pack for helping people clarify vague visions, locate their current position, define milestones, execute the next stage, and review progress.",
-  "method": "Life Vision Board OS",
+  "description": "A platform-neutral Agent Pack for helping people clarify vague visions, manage a multi-goal growth portfolio, locate their current position, define milestones, execute the next stage, and review progress.",
+  "method": "Lifelong Growth OS",
   "entrypoints": {
     "genericAgent": "AGENT.md",
     "codexSkill": "skills/life-vision-board/SKILL.md"
@@ -50,8 +51,15 @@
     "personalized coaching",
     "stage review adjustment",
     "user state memory",
+    "life-level growth profile",
+    "multi-goal portfolio",
+    "daily weekly monthly reflection logs",
     "visual render brief generation"
   ],
+  "dataArchitecture": {
+    "sourcePackage": "Reusable protocols, schemas, skills, tests, and docs live in this repository.",
+    "privateUserData": "Private growth data should live outside source control or under a gitignored data/users/<user-id>/ workspace."
+  },
   "tests": {
     "structural": "tests/validate-pack.ps1",
     "transcriptHarness": "tests/test-transcript-harness.ps1",

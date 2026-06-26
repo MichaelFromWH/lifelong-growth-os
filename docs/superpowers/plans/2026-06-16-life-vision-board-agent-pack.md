@@ -1,8 +1,8 @@
-﻿# Life Vision Board OS Agent Pack Implementation Plan
+﻿# Lifelong Growth OS OS Agent Pack Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Build a platform-neutral Agent Pack for Life Vision Board OS with scenario-based tests and a self-test report.
+**Goal:** Build a platform-neutral Agent Pack for Lifelong Growth OS OS with scenario-based tests and a self-test report.
 
 **Architecture:** Use `AGENT.md` as the orchestrator, `skills/` as phase protocols, `schemas/` as state templates, and `tests/` as structural plus scenario validation. Keep the first version Markdown-first so it can later be embedded into Codex, Claude Code, ChatGPT, Coze, or an app wrapper.
 
@@ -39,7 +39,7 @@ Expected: FAIL because pack files are missing.
 
 - [x] **Step 1: Implement orchestrator**
 
-Write the main Life Vision Board Orchestrator with loop, state artifacts, category routing, guidance styles, and skill routing.
+Write the main Lifelong Growth OS Orchestrator with loop, state artifacts, category routing, guidance styles, and skill routing.
 
 - [x] **Step 2: Implement skills**
 

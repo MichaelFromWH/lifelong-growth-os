@@ -1,6 +1,6 @@
-﻿# Transcript: 04-exam-certification-ielts.md
+﻿# Transcript: 12-mainline-ai-growth-partner-with-side-goals.md
 
-- Category: exam_certification
+- Category: strategy_decision
 - Result: PASS
 - Score: 25/27
 
@@ -8,7 +8,7 @@
 
 ### Turn 1 - User
 
-"我三个月后想考雅思，总分目标 7，但现在不知道自己差在哪里。"
+"Fitness is only a small goal. Let's return to the main line. The first product direction I want to validate is an AI personalized growth partner. The first audience can be people like me: adults transforming in the AI era, OPC explorers, people who want to build their own thing, and career-transition professionals. The public account is a side channel, and I may explore other products later."
 
 ### Turn 2 - Lifelong Growth OS Orchestrator: Process Preview
 
@@ -28,7 +28,7 @@ Stage Purpose:
 - Now we are making the goal concrete, so the user knows what "done" will look like.
 
 Goal Contract:
-- Category: exam_certification
+- Category: strategy_decision
 - Clarified goal: convert the user's vision into a concrete target with observable success signals.
 - Success signals: the user produces or records real output that proves progress.
 - Time horizon: first review after 7 days unless the scenario states a stricter deadline.
@@ -45,6 +45,24 @@ Goal Decomposition:
 - Complete a small diagnostic task.
 - Submit the first output for feedback.
 
+### Turn 3A - Lifelong Growth OS Orchestrator: Life-Level Profile And Goal Portfolio
+
+Stage Purpose:
+- Because the user named several life goals, we should not force everything into one goal contract yet.
+
+Growth Profile:
+- Capture the life north star in the user's own words.
+- Identify life domains such as career, health, emotional steadiness, family relationships, and contribution.
+- Mark current details as user-confirmed, provisional, or needing future evidence.
+
+Goal Portfolio:
+- Main goal: choose only after priority principles and current constraints are clearer.
+- Maintenance goals: protect health, family relationships, and emotional steadiness from being sacrificed by the main goal.
+- Exploration goals: keep uncertain long-term directions visible without overcommitting.
+- Paused goals: preserve real but inactive goals without turning them into silent guilt.
+
+Priority Principle Prompt:
+- Before resolving conflicts, ask what should win when goals compete for time, energy, money, attention, or family stability.
 
 ### Turn 4 - Lifelong Growth OS Orchestrator: Current Stage
 
@@ -79,7 +97,7 @@ Milestone Route:
 - Risks: likely blockers from the scenario.
 - Checkpoints: observable review moments.
 
-Category-specific route hint: Use score baseline, section gap diagnosis, mock practice, and review cadence.
+Category-specific route hint: Use options, constraints, reversible tests, risks, and decision criteria.
 
 ### Turn 7 - Lifelong Growth OS Orchestrator: 7-Day Stage Plan
 
@@ -125,18 +143,24 @@ User State Update:
 
 ## Scenario Acceptance Focus
 
-- Ask for current mock scores by section and target school requirement.
-- Use exam-specific baseline and score gap.
-- Plan by listening, reading, writing, speaking, and test strategy.
-- Include weekly mocks or section checks.
+- Treat the AI personalized growth partner as the current `main` goal for the active cycle.
+- Treat AI-era transition adults, OPC explorers, independent product builders, and career-transition professionals as the current validation ICP.
+- Keep fitness, emotional steadiness, and family harmony as maintenance guardrails unless the user promotes one of them.
+- Treat the public account and other possible AI products as bounded exploration or support channels, not competing main goals.
+- Create or update `growth_profile` and `goal_portfolio` before deep planning.
+- Ask at most 3 questions at once; prefer one high-leverage question in a 1-on-1 partner cadence.
+- Ask for current-stage evidence before producing a detailed product roadmap.
+- Keep the design general enough for future users, not hardcoded to this first deep user.
 
 ## Scenario Failure Signals
 
-- Gives generic English plan.
-- Ignores score breakdown.
-- No mock test or review cadence.
+- Lets the fitness side goal take over the product conversation.
+- Treats the public account as the main product without user confirmation.
+- Dilutes the ICP back into "everyone who wants to grow" before the first validation loop.
+- Produces a full roadmap before assessing current validation stage and evidence.
+- Asks 4 or more questions in one response.
+- Hardcodes one user's life goals as the default profile for all future users.
 
 ## Harness Score
 
 Score: 25/27
-

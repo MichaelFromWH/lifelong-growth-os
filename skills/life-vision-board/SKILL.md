@@ -3,9 +3,11 @@ name: life-vision-board
 description: Use when a user wants to clarify and achieve a vague vision, idea, ambition, life goal, learning target, project, habit, career move, creative work, research direction, strategy decision, or personal growth objective.
 ---
 
-# Life Vision Board
+# 终身成长OS / Lifelong Growth OS
 
 Use this skill as a goal-driven, personalized achievement workflow for any vision or goal. It supports learning, projects, habits, career growth, creative work, research, life changes, strategy decisions, and fuzzy early ideas.
+
+Product direction: Lifelong Growth OS. The package remains installable as `life-vision-board`, but the workflow can now support life-level vision, multi-goal portfolios, and per-goal execution loops.
 
 The core loop is:
 
@@ -32,12 +34,13 @@ Before each substantive reply, run `FLOW_GUARD`:
 Then proceed in order:
 
 1. If the vision, idea, or goal is vague, patiently help the user find and shape the real goal.
-2. Assess the current stage with suitable methods, not self-rating alone.
-3. Create a text artifact plus a scene-fit visual companion for every key artifact: goal contract when useful, current-position map, target milestones, stage plan, and review dashboard.
-4. Decompose the current milestone into stage goals and stage-planning actions.
-5. Coach execution through personalized guidance, practice, critique, decisions, or production.
-6. Review the stage, adjust the path, and continue until the goal is achieved, revised, paused, or closed.
-7. Update user state memory after every meaningful interaction.
+2. If the user describes a life purpose, desired identity, legacy, or several simultaneous goals, create or update `growth_profile` and `goal_portfolio` before choosing a single goal loop.
+3. Assess the current stage with suitable methods, not self-rating alone.
+4. Create a text artifact plus a scene-fit visual companion for every key artifact: goal contract when useful, current-position map, target milestones, stage plan, and review dashboard.
+5. Decompose the current milestone into stage goals and stage-planning actions.
+6. Coach execution through personalized guidance, practice, critique, decisions, or production.
+7. Review the stage, adjust the path, and continue until the goal is achieved, revised, paused, or closed.
+8. Update user state memory after every meaningful interaction.
 
 ## User-Facing Conversation Rules
 
@@ -114,6 +117,7 @@ Use one or more lightweight methods:
 - Anti-goal: "What outcome would feel wrong even if it looked successful?"
 
 Ask only the smallest useful set of questions at once.
+Never ask more than 3 questions at once. Prefer 1 question when the user wants a 1-on-1 partner or mentor cadence.
 
 ### STAGE_PURPOSE_BRIEF
 
@@ -233,6 +237,8 @@ At the start of every meaningful goal-support turn, internally check:
 ```yaml
 flow_guard:
   goal_stage: intake|vision_clarification|current_stage_assessment|target_milestones|stage_goal_decomposition|personalized_coaching|stage_review_adjustment|paused|goal_achieved
+  growth_profile: missing|draft|current
+  goal_portfolio: missing|draft|current
   goal_contract: missing|draft|confirmed
   current_stage: missing|estimated|assessed
   milestone_route: missing|draft|confirmed
@@ -306,6 +312,8 @@ If any field is unknown, mark it as `missing` and collect it before proceeding.
 
 For a full goal-support cycle, produce or update these artifacts:
 
+- `growth_profile`: life north star, values, desired identity, domains, patterns, and memory policy when the conversation is life-level.
+- `goal_portfolio`: active goals, goal roles, priority principles, conflicts, and active-cycle focus when the user has multiple goals.
 - `goal_contract`: destination, category, success signals, time horizon, constraints, and guidance style.
 - `current_stage`: current stage, assessment basis, confidence, strengths, weaknesses, and missing prerequisites.
 - `target_milestones`: current stage, destination, milestones, dependencies, risks, and checkpoints.
@@ -313,7 +321,10 @@ For a full goal-support cycle, produce or update these artifacts:
 - `coaching_result`: user output, feedback, observed strength, observed weakness, state update, and next action.
 - `review_result`: stage output reviewed, progress judgment, decision, adjustment, and next review date.
 - `visual_companion`: scene-fit image, diagram, or render brief attached to each key milestone, stage-plan, or review artifact.
+- `growth_log`: daily, weekly, or monthly evidence when the interaction is a reflection or review.
 - `user_state_memory`: durable preferences, friction patterns, effective explanations, current blockers, and plan state.
+
+Do not store private real-user growth data inside the reusable Agent Pack source. Use a private user workspace, platform memory, or another user-owned store.
 
 ## Goal Categories
 

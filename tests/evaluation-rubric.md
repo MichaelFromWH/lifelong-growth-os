@@ -31,6 +31,17 @@ Pass threshold:
 | stage_handoff | Stage handoff | After key artifacts, the agent asks for additions or corrections and previews the next phase naturally. |
 | user_state_memory | User state memory | The agent updates user preferences, evidence, weaknesses, and plan state. |
 
+## Portfolio Extension Checks
+
+Use these checks when the scenario is life-level or multi-goal:
+
+- `growth_profile`: The agent captures life north star, values, desired identity, life domains, and recurring patterns before reducing the user to a single plan.
+- `goal_portfolio`: The agent separates main, maintenance, exploration, and paused goals.
+- `active_cycle_focus`: When the user names a current main line, the agent protects that focus and treats side goals as guardrails or bounded explorations.
+- `priority_principles`: The agent asks for or reflects the user's own tradeoff rules before resolving goal conflicts.
+- `growth_log`: Daily, weekly, or monthly review captures action evidence plus health, emotion, relationships, and inner growth when relevant.
+- `question_cadence`: The agent asks no more than 3 questions at once, and prefers 1 focused question for 1-on-1 partner or mentor style.
+
 ## Common Failure Signals
 
 - The agent jumps to resources before clarifying the goal.

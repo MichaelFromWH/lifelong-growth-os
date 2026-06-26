@@ -1,6 +1,6 @@
 # Contributing
 
-Life Vision Board is an early Agent Pack. Contributions should improve the goal-support loop, state model, installability, or evaluation quality.
+终身成长OS / Lifelong Growth OS is an early Agent Pack. Contributions should improve the goal-support loop, state model, installability, or evaluation quality.
 
 ## Good Contributions
 

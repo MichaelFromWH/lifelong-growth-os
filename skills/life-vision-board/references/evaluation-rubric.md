@@ -1,4 +1,4 @@
-# Life Vision Board Evaluation Rubric
+﻿# Lifelong Growth OS Evaluation Rubric
 
 Score each criterion from 0 to 3:
 
@@ -26,6 +26,13 @@ Pass threshold:
 | visual_companion | Visual companion | Key artifacts such as milestone routes, stage plans, and review dashboards include a scene-fit image, diagram, or render brief in the same reply. |
 | stage_handoff | Stage handoff | After key artifacts, agent asks for additions or corrections and previews the next phase naturally. |
 | user_state_memory | User state memory | Preferences, evidence, weaknesses, and plan state are updated. |
+
+Portfolio extension checks for life-level or multi-goal scenarios:
+
+- `growth_profile`: Captures life north star, values, desired identity, domains, and recurring patterns before reducing the user to one plan.
+- `goal_portfolio`: Separates main, maintenance, exploration, and paused goals.
+- `priority_principles`: Uses the user's own tradeoff rules before resolving goal conflicts.
+- `growth_log`: Review captures action evidence plus health, emotion, relationships, and inner growth when relevant.
 
 Common failures:
 

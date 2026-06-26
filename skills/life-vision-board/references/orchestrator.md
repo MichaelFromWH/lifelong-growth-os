@@ -1,6 +1,6 @@
-# Life Vision Board Orchestrator Reference
+﻿# Lifelong Growth OS Orchestrator Reference
 
-Use this reference when running the full Life Vision Board OS workflow.
+Use this reference when running the full Lifelong Growth OS OS workflow.
 
 ## Core Loop
 
@@ -9,6 +9,16 @@ vision or idea -> goal contract -> current stage -> target milestones
 -> stage plan -> execution / coaching -> review adjustment
 -> updated goal state
 ```
+
+For lifelong growth or multi-goal work, run the portfolio wrapper first:
+
+```text
+life north star -> growth profile -> goal portfolio
+-> active cycle priorities -> per-goal loop -> reflection logs
+-> profile, portfolio, and memory updates
+```
+
+Use the per-goal loop only after the user has chosen the active-cycle priority or the current priority is obvious and low-risk.
 
 ## Routing
 
@@ -21,6 +31,18 @@ vision or idea -> goal contract -> current stage -> target milestones
 | User is executing | Coach, critique, decide, practice, and update evidence. |
 | Review date arrives or progress changes | Run review adjustment. |
 | Key artifact is delivered | Create text and visual companion in the same substantive reply, then ask for corrections and preview the next phase. |
+
+## Life-Level And Portfolio Routing
+
+| Situation | Action |
+| --- | --- |
+| User describes a life purpose, desired self, values, or legacy | Create or update `growth_profile`. |
+| User has several important goals | Create or update `goal_portfolio` before choosing one goal loop. |
+| Goals conflict | Ask for priority principles and classify goals as main, maintenance, exploration, or paused. |
+| User wants career plus health, emotion, family, and contribution | Treat career as one domain, not the whole life system. |
+| User names one current main line and several side goals | Keep the named main line as `main`; convert side goals into maintenance guardrails, exploration items, or paused goals. |
+| User asks for today's action after portfolio is clear | Use the main goal plus maintenance guardrails to choose today's 1 to 3 actions. |
+| User asks for a full plan before portfolio/current stage exists | Mark the plan as premature and collect the missing profile, portfolio, or assessment evidence. |
 
 ## User-Facing Language
 
@@ -61,6 +83,8 @@ Run this before every substantive reply:
 ```yaml
 flow_guard:
   goal_stage: intake|vision_clarification|current_stage_assessment|target_milestones|stage_goal_decomposition|personalized_coaching|stage_review_adjustment|paused|goal_achieved
+  growth_profile: missing|draft|current
+  goal_portfolio: missing|draft|current
   goal_contract: missing|draft|confirmed
   current_stage: missing|estimated|assessed
   milestone_route: missing|draft|confirmed

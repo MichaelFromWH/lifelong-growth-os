@@ -1,6 +1,8 @@
-# Life Vision Board
+# 终身成长OS / Lifelong Growth OS
 
-Life Vision Board is a platform-neutral Agent Pack for turning vague goals, ambitions, learning targets, projects, habits, career moves, creative work, research directions, and life changes into a staged execution loop.
+终身成长OS is a platform-neutral Agent Pack for turning vague goals, ambitions, learning targets, projects, habits, career moves, creative work, research directions, and life changes into a staged execution loop.
+
+Product direction: **Lifelong Growth OS**. The repository keeps the `life-vision-board` package name for compatibility, while the architecture is expanding toward long-term, multi-goal growth support.
 
 It replaces the earlier Personalized Lifelong Learning skill with a broader goal-support workflow:
 
@@ -14,8 +16,10 @@ The core upgrade is simple but important: the agent should locate the user's cur
 
 ## What It Does
 
-Life Vision Board helps an agent guide users through:
+终身成长OS helps an agent guide users through:
 
+- shaping a life-level growth profile and life north star
+- managing a multi-goal portfolio across main, maintenance, exploration, and paused goals
 - clarifying vague visions or goals
 - assessing the current position with a method that matches the goal type
 - identifying the distance to the target
@@ -55,9 +59,14 @@ The standalone Web/App execution plan is tracked in [docs/standalone-web-app-goa
 │   ├── review-adjustment.md
 │   └── visual-rendering.md
 ├── schemas/                         # Goal and user state templates
+├── docs/architecture/               # Generic Agent Pack and data architecture notes
 ├── scripts/                         # Local installation helpers
 └── tests/                           # Validation and transcript harness
 ```
+
+Private real-user growth data should not be committed to the Agent Pack source. Use a private store such as `data/users/<user-id>/` or an equivalent platform workspace.
+
+See `docs/architecture/lifelong-growth-os-agent-pack-architecture.md` for the generic source/data boundary.
 
 ## Install As A Codex Skill
 
@@ -128,7 +137,7 @@ The transcript harness generates:
 
 Current version: `0.2.0`
 
-This is an early Agent Pack. It already includes a complete workflow, schemas, tests, and a Codex-installable skill. The next major upgrade is a real model transcript runner that calls OpenAI / Claude / Coze adapters instead of deterministic local transcripts.
+This is an early Agent Pack. It already includes a complete workflow, schemas, tests, and a Codex-installable skill. The current architecture upgrade adds life-level growth profiles, multi-goal portfolios, and daily/weekly/monthly reflection logs. The next major upgrade is a real model transcript runner that calls OpenAI / Claude / Coze adapters instead of deterministic local transcripts.
 
 ## License
 

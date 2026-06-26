@@ -1,8 +1,8 @@
-# Model Strategy For Life Vision Board
+﻿# Model Strategy For Lifelong Growth OS
 
 Date: 2026-06-16
 
-This note summarizes open-weight / open-source model candidates for the Life Vision Board product. It focuses on a future independent Web/App version, not only the current Codex Skill package.
+This note summarizes open-weight / open-source model candidates for the Lifelong Growth OS product. It focuses on a future independent Web/App version, not only the current Codex Skill package.
 
 ## First Correction: "GLM M3" Is Probably Not The Right Name
 
@@ -72,7 +72,7 @@ Practical recommendation:
 
 ### 3. Retrieval / Memory
 
-Life Vision Board needs durable memory. Do not rely only on the chat model context.
+Lifelong Growth OS needs durable memory. Do not rely only on the chat model context.
 
 Recommended components:
 

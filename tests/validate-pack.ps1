@@ -53,9 +53,13 @@ $requiredFiles = @(
   "skills/review-adjustment.md",
   "skills/visual-rendering.md",
   "schemas/user-profile.schema.md",
+  "schemas/growth-profile.schema.md",
+  "schemas/goal-portfolio.schema.md",
+  "schemas/growth-log.schema.md",
   "schemas/goal-contract.schema.md",
   "schemas/goal-state.schema.md",
   "schemas/stage-plan.schema.md",
+  "docs/architecture/lifelong-growth-os-agent-pack-architecture.md",
   "tests/evaluation-rubric.md",
   "tests/run-transcript-harness.ps1",
   "tests/test-transcript-harness.ps1",
@@ -67,7 +71,7 @@ foreach ($file in $requiredFiles) {
 }
 
 Assert-Contains "AGENT.md" @(
-  "Life Vision Board Orchestrator",
+  "Lifelong Growth OS Orchestrator",
   "goal_stage",
   "stage_transition",
   "STAGE_TRANSITION_RULES",
@@ -121,7 +125,7 @@ Assert-Contains "tests/evaluation-rubric.md" @(
 )
 
 Assert-Contains "README.md" @(
-  "Life Vision Board",
+  "Lifelong Growth OS",
   "life-vision-board",
   "current position, not always ask for a current level",
   "Product Forms",
@@ -167,7 +171,7 @@ Assert-Contains "INSTALL.md" @(
 
 Assert-Contains "agent-pack.json" @(
   '"name": "life-vision-board"',
-  '"displayName": "Life Vision Board"',
+  '"productName": "Lifelong Growth OS"',
   '"productForms"',
   '"agentPlatformPlugin"',
   '"standaloneProduct"',
@@ -186,7 +190,7 @@ Assert-FileExists "skills/life-vision-board/scripts/validate-skill.ps1" | Out-Nu
 
 Assert-Contains "skills/life-vision-board/SKILL.md" @(
   "name: life-vision-board",
-  "Life Vision Board",
+  "Lifelong Growth OS",
   "goal_stage",
   "stage_transition",
   "STAGE_TRANSITION_RULES",
